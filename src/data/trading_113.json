@@ -1,0 +1,2488 @@
+{
+  "system": "TradingAgents",
+  "system_domain": "Financial Markets",
+  "attempt_id": "113",
+  "ground_truth_vector": [
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "metadata": {
+    "attempt_number": "113",
+    "attempt_dir": "c:\\Users\\idell\\Desktop\\CORTEX\\cortex\\POIROT_SW\\TradingAgents\\POIROT_Validation_TradingAgents\\attempt_113",
+    "timestamp": "2026-02-12T12:28:36.327407",
+    "injected_hazards": "Corrupted Data (Fundamentals Analyst)",
+    "total_errors_injected": "1",
+    "is_correct": false,
+    "ground_truth_vector": "[0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]",
+    "predicted_vector": "[0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]"
+  },
+  "chat_logs": "(Chat logs not available for TradingAgents)",
+  "voting_data": {
+    "voting_summary": {
+      "total_voters": 12,
+      "total_weighted_votes": 31.1168,
+      "similarity_metric": "hamming_normalized_inverted",
+      "weight_range": [
+        0.5,
+        1.0
+      ],
+      "is_tie": true,
+      "tied_count": 2
+    },
+    "winning_location": {
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "name": "The Trader",
+      "total_score": 4.8167,
+      "percentage": 15.48,
+      "dimension_index": 7
+    },
+    "tied_locations": [
+      {
+        "dimension_index": 7,
+        "name": "The Trader",
+        "score": 4.816699999999999,
+        "percentage": 15.48
+      },
+      {
+        "dimension_index": 9,
+        "name": "Safe Analyst (Conservative)",
+        "score": 4.816699999999999,
+        "percentage": 15.48
+      }
+    ],
+    "agent_votes": [
+      {
+        "agent_name": "bear_researcher_vd6b65b56",
+        "agent_position": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "voted_location": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "hazard_vector": "Risk manager's overconfidence in growth thesis without fully integrating safe analyst's inventory risk concerns",
+        "similarity_to_self": 0.5333,
+        "vote_weight": 0.5167,
+        "p_success": null,
+        "baseline": null
+      },
+      {
+        "agent_name": "bull_researcher_vc3b37472",
+        "agent_position": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "voted_location": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "hazard_vector": "Valuation risk stemming from potential inventory write‑downs and margin compression due to competitive pressure",
+        "similarity_to_self": 0.8,
+        "vote_weight": 0.65,
+        "p_success": null,
+        "baseline": null
+      },
+      {
+        "agent_name": "fundamentals_analyst_v8c94e945",
+        "agent_position": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "voted_location": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "hazard_vector": "Moat Erosion Risk from Inventory Obsolescence and Pricing Power Loss",
+        "similarity_to_self": 0.6667,
+        "vote_weight": 0.5833,
+        "p_success": null,
+        "baseline": null
+      },
+      {
+        "agent_name": "market_analyst_v83baa837",
+        "agent_position": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "voted_location": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "hazard_vector": "No Hazard Detected",
+        "similarity_to_self": 0.9333,
+        "vote_weight": 0.7167,
+        "p_success": null,
+        "baseline": null
+      },
+      {
+        "agent_name": "neutral_analyst_vb7f155bb",
+        "agent_position": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "voted_location": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "hazard_vector": "Potential inventory write‑down and ASIC competition risk not fully mitigated in NVDA trade",
+        "similarity_to_self": 0.4,
+        "vote_weight": 0.45,
+        "p_success": null,
+        "baseline": null
+      },
+      {
+        "agent_name": "news_analyst_v5c83ec70",
+        "agent_position": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "voted_location": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "hazard_vector": "Risk integration failure due to conflicting analyst signals leading to suboptimal execution and insufficient hedging",
+        "similarity_to_self": 0.5333,
+        "vote_weight": 0.5167,
+        "p_success": null,
+        "baseline": null
+      },
+      {
+        "agent_name": "research_manager_v61f18305",
+        "agent_position": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "voted_location": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "hazard_vector": "Overconfidence in growth thesis leading to underestimation of inventory risk",
+        "similarity_to_self": 0.4667,
+        "vote_weight": 0.4833,
+        "p_success": null,
+        "baseline": null
+      },
+      {
+        "agent_name": "risk_manager_v9c7fd422",
+        "agent_position": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "voted_location": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "hazard_vector": "Inventory write‑down risk and margin erosion due to ASIC competition",
+        "similarity_to_self": 0.7333,
+        "vote_weight": 0.6167,
+        "p_success": null,
+        "baseline": null
+      },
+      {
+        "agent_name": "risky_analyst_v40531572",
+        "agent_position": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "voted_location": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "hazard_vector": "Concentration risk and inadequate risk controls in a single‑stock, high‑valuation trade",
+        "similarity_to_self": 0.6,
+        "vote_weight": 0.55,
+        "p_success": null,
+        "baseline": null
+      },
+      {
+        "agent_name": "safe_analyst_v7119c164",
+        "agent_position": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "voted_location": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "hazard_vector": "Concentration and Stop‑Loss Risk in NVDA Trade",
+        "similarity_to_self": 0.7333,
+        "vote_weight": 0.6167,
+        "p_success": null,
+        "baseline": null
+      },
+      {
+        "agent_name": "social_media_analyst_ve9fe4c58",
+        "agent_position": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "voted_location": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "hazard_vector": "Inadequate risk mitigation due to insufficient stop‑loss and inventory risk oversight, leading to potential loss if NVDA’s gross margin falls below 70% or inventory write‑downs materialize.",
+        "similarity_to_self": 0.4667,
+        "vote_weight": 0.4833,
+        "p_success": null,
+        "baseline": null
+      },
+      {
+        "agent_name": "trader_v7318bcff",
+        "agent_position": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "voted_location": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "hazard_vector": "No hazard identified",
+        "similarity_to_self": 1.0,
+        "vote_weight": 0.75,
+        "p_success": null,
+        "baseline": null
+      }
+    ],
+    "dimension_scores": [
+      1.4833,
+      1.0,
+      1.0,
+      0.45,
+      3.2334,
+      1.65,
+      1.7834,
+      4.8167,
+      3.65,
+      4.8167,
+      2.45,
+      4.3,
+      0.0,
+      0.0,
+      0.4833
+    ],
+    "dimension_rankings": [
+      {
+        "dimension_index": 7,
+        "name": "The Trader",
+        "score": 4.8167,
+        "rank": 1,
+        "percentage": 15.48
+      },
+      {
+        "dimension_index": 9,
+        "name": "Safe Analyst (Conservative)",
+        "score": 4.8167,
+        "rank": 2,
+        "percentage": 15.48
+      },
+      {
+        "dimension_index": 11,
+        "name": "Risk Manager (The Judge)",
+        "score": 4.3,
+        "rank": 3,
+        "percentage": 13.82
+      },
+      {
+        "dimension_index": 8,
+        "name": "Risky Analyst (Aggressive)",
+        "score": 3.65,
+        "rank": 4,
+        "percentage": 11.73
+      },
+      {
+        "dimension_index": 4,
+        "name": "Bull Researcher",
+        "score": 3.2334,
+        "rank": 5,
+        "percentage": 10.39
+      },
+      {
+        "dimension_index": 10,
+        "name": "Neutral Analyst (Balanced)",
+        "score": 2.45,
+        "rank": 6,
+        "percentage": 7.87
+      },
+      {
+        "dimension_index": 6,
+        "name": "Research Manager",
+        "score": 1.7834,
+        "rank": 7,
+        "percentage": 5.73
+      },
+      {
+        "dimension_index": 5,
+        "name": "Bear Researcher",
+        "score": 1.65,
+        "rank": 8,
+        "percentage": 5.3
+      },
+      {
+        "dimension_index": 0,
+        "name": "Market Analyst",
+        "score": 1.4833,
+        "rank": 9,
+        "percentage": 4.77
+      },
+      {
+        "dimension_index": 1,
+        "name": "Fundamentals Analyst",
+        "score": 1.0,
+        "rank": 10,
+        "percentage": 3.21
+      },
+      {
+        "dimension_index": 2,
+        "name": "News Analyst",
+        "score": 1.0,
+        "rank": 11,
+        "percentage": 3.21
+      },
+      {
+        "dimension_index": 14,
+        "name": "External Data Feeds",
+        "score": 0.4833,
+        "rank": 12,
+        "percentage": 1.55
+      },
+      {
+        "dimension_index": 3,
+        "name": "Social Media Analyst",
+        "score": 0.45,
+        "rank": 13,
+        "percentage": 1.45
+      },
+      {
+        "dimension_index": 12,
+        "name": "System's Memory",
+        "score": 0.0,
+        "rank": 14,
+        "percentage": 0.0
+      },
+      {
+        "dimension_index": 13,
+        "name": "Workflow Directed Acyclic Graph (DAG)",
+        "score": 0.0,
+        "rank": 15,
+        "percentage": 0.0
+      }
+    ],
+    "location_scores": {
+      "[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]": {
+        "name": "Market Analyst",
+        "vector": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.0,
+        "percentage": 0.0,
+        "votes_received": [],
+        "is_multi_component": false
+      },
+      "[0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]": {
+        "name": "Fundamentals Analyst",
+        "vector": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.0,
+        "percentage": 0.0,
+        "votes_received": [],
+        "is_multi_component": false
+      },
+      "[0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]": {
+        "name": "News Analyst",
+        "vector": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.0,
+        "percentage": 0.0,
+        "votes_received": [],
+        "is_multi_component": false
+      },
+      "[0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]": {
+        "name": "Social Media Analyst",
+        "vector": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.0,
+        "percentage": 0.0,
+        "votes_received": [],
+        "is_multi_component": false
+      },
+      "[0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]": {
+        "name": "Bull Researcher",
+        "vector": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.0,
+        "percentage": 0.0,
+        "votes_received": [],
+        "is_multi_component": false
+      },
+      "[0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]": {
+        "name": "Bear Researcher",
+        "vector": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.0,
+        "percentage": 0.0,
+        "votes_received": [],
+        "is_multi_component": false
+      },
+      "[0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0]": {
+        "name": "Research Manager",
+        "vector": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.0,
+        "percentage": 0.0,
+        "votes_received": [],
+        "is_multi_component": false
+      },
+      "[0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]": {
+        "name": "The Trader",
+        "vector": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.0,
+        "percentage": 0.0,
+        "votes_received": [],
+        "is_multi_component": false
+      },
+      "[0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]": {
+        "name": "Risky Analyst (Aggressive)",
+        "vector": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.0,
+        "percentage": 0.0,
+        "votes_received": [],
+        "is_multi_component": false
+      },
+      "[0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]": {
+        "name": "Safe Analyst (Conservative)",
+        "vector": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.0,
+        "percentage": 0.0,
+        "votes_received": [],
+        "is_multi_component": false
+      },
+      "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0]": {
+        "name": "Neutral Analyst (Balanced)",
+        "vector": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.0,
+        "percentage": 0.0,
+        "votes_received": [],
+        "is_multi_component": false
+      },
+      "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]": {
+        "name": "Risk Manager (The Judge)",
+        "vector": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.0,
+        "percentage": 0.0,
+        "votes_received": [],
+        "is_multi_component": false
+      },
+      "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0]": {
+        "name": "System's Memory",
+        "vector": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "total_score": 0.0,
+        "percentage": 0.0,
+        "votes_received": [],
+        "is_multi_component": false
+      },
+      "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]": {
+        "name": "Workflow Directed Acyclic Graph (DAG)",
+        "vector": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "total_score": 0.0,
+        "percentage": 0.0,
+        "votes_received": [],
+        "is_multi_component": false
+      },
+      "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]": {
+        "name": "External Data Feeds",
+        "vector": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "total_score": 0.0,
+        "percentage": 0.0,
+        "votes_received": [],
+        "is_multi_component": false
+      },
+      "[0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0]": {
+        "name": "Bull Researcher + Bear Researcher + Research Manager + The Trader + Risky Analyst (Aggressive) + Safe Analyst (Conservative) + Neutral Analyst (Balanced) + Risk Manager (The Judge)",
+        "vector": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.5167,
+        "percentage": 1.66,
+        "votes_received": [
+          "bear_researcher_vd6b65b56"
+        ],
+        "is_multi_component": true
+      },
+      "[0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0]": {
+        "name": "Bull Researcher + Bear Researcher + Research Manager + Risk Manager (The Judge)",
+        "vector": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.65,
+        "percentage": 2.09,
+        "votes_received": [
+          "bull_researcher_vc3b37472"
+        ],
+        "is_multi_component": true
+      },
+      "[0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0]": {
+        "name": "The Trader + Risky Analyst (Aggressive) + Safe Analyst (Conservative) + Risk Manager (The Judge)",
+        "vector": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.5833,
+        "percentage": 1.87,
+        "votes_received": [
+          "fundamentals_analyst_v8c94e945"
+        ],
+        "is_multi_component": true
+      },
+      "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]": {
+        "name": "Unknown/Zero Vector",
+        "vector": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "total_score": 1.4667,
+        "percentage": 4.71,
+        "votes_received": [
+          "market_analyst_v83baa837",
+          "trader_v7318bcff"
+        ],
+        "is_multi_component": false
+      },
+      "[1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0]": {
+        "name": "Market Analyst + Fundamentals Analyst + News Analyst + Social Media Analyst + Bull Researcher + The Trader + Risky Analyst (Aggressive) + Safe Analyst (Conservative) + Neutral Analyst (Balanced) + Risk Manager (The Judge)",
+        "vector": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.45,
+        "percentage": 1.45,
+        "votes_received": [
+          "neutral_analyst_vb7f155bb"
+        ],
+        "is_multi_component": true
+      },
+      "[0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0]": {
+        "name": "Bull Researcher + The Trader + Risky Analyst (Aggressive) + Safe Analyst (Conservative) + Neutral Analyst (Balanced) + Risk Manager (The Judge)",
+        "vector": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.5167,
+        "percentage": 1.66,
+        "votes_received": [
+          "news_analyst_v5c83ec70"
+        ],
+        "is_multi_component": true
+      },
+      "[0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 0]": {
+        "name": "Bull Researcher + Bear Researcher + The Trader + Risky Analyst (Aggressive) + Safe Analyst (Conservative) + Neutral Analyst (Balanced) + Risk Manager (The Judge)",
+        "vector": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.4833,
+        "percentage": 1.55,
+        "votes_received": [
+          "research_manager_v61f18305"
+        ],
+        "is_multi_component": true
+      },
+      "[0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0]": {
+        "name": "The Trader + Risky Analyst (Aggressive) + Safe Analyst (Conservative)",
+        "vector": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.6167,
+        "percentage": 1.98,
+        "votes_received": [
+          "risk_manager_v9c7fd422"
+        ],
+        "is_multi_component": true
+      },
+      "[1, 1, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0]": {
+        "name": "Market Analyst + Fundamentals Analyst + News Analyst + The Trader + Safe Analyst (Conservative)",
+        "vector": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.55,
+        "percentage": 1.77,
+        "votes_received": [
+          "risky_analyst_v40531572"
+        ],
+        "is_multi_component": true
+      },
+      "[0, 0, 0, 0, 1, 0, 1, 1, 0, 1, 0, 1, 0, 0, 0]": {
+        "name": "Bull Researcher + Research Manager + The Trader + Safe Analyst (Conservative) + Risk Manager (The Judge)",
+        "vector": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.6167,
+        "percentage": 1.98,
+        "votes_received": [
+          "safe_analyst_v7119c164"
+        ],
+        "is_multi_component": true
+      },
+      "[1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1]": {
+        "name": "Market Analyst + The Trader + Risky Analyst (Aggressive) + Safe Analyst (Conservative) + Neutral Analyst (Balanced) + Risk Manager (The Judge) + External Data Feeds",
+        "vector": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "total_score": 0.4833,
+        "percentage": 1.55,
+        "votes_received": [
+          "social_media_analyst_ve9fe4c58"
+        ],
+        "is_multi_component": true
+      }
+    },
+    "dimension_probabilities": {
+      "market_analyst_Market_Analyst": {
+        "name": "Market Analyst",
+        "dimension_index": 0,
+        "total_weight": 1.4833,
+        "probability": 0.2139,
+        "percentage": "21.39%",
+        "description": "Potential errors in technical analysis models, misinterpretation of price/volume data, or failure to identify key chart patterns and momentum indicators.",
+        "type": "agent"
+      },
+      "fundamentals_analyst_Fundamentals_Analyst": {
+        "name": "Fundamentals Analyst",
+        "dimension_index": 1,
+        "total_weight": 1.0,
+        "probability": 0.1442,
+        "percentage": "14.42%",
+        "description": "Potential errors in financial statement analysis, incorrect valuation modeling (e.g., DCF, P/E), or overlooking crucial balance sheet weaknesses or cash flow issues.",
+        "type": "agent"
+      },
+      "news_analyst_News_Analyst": {
+        "name": "News Analyst",
+        "dimension_index": 2,
+        "total_weight": 1.0,
+        "probability": 0.1442,
+        "percentage": "14.42%",
+        "description": "Potential misinterpretation of news sentiment, failure to distinguish significant macro or micro events from noise, or susceptibility to biased reporting.",
+        "type": "agent"
+      },
+      "social_media_analyst_Social_Media_Analyst": {
+        "name": "Social Media Analyst",
+        "dimension_index": 3,
+        "total_weight": 0.45,
+        "probability": 0.0649,
+        "percentage": "6.49%",
+        "description": "Potential flaws in sentiment analysis algorithms, inability to detect manipulation (bots, astroturfing), or improperly weighting the impact of retail sentiment.",
+        "type": "agent"
+      },
+      "bull_researcher_Bull_Researcher": {
+        "name": "Bull Researcher",
+        "dimension_index": 4,
+        "total_weight": 3.2334,
+        "probability": 0.4664,
+        "percentage": "46.64%",
+        "description": "Potential for confirmation bias leading to overlooking risks, creating flawed growth projections, or presenting a one-sided, overly optimistic case.",
+        "type": "agent"
+      },
+      "bear_researcher_Bear_Researcher": {
+        "name": "Bear Researcher",
+        "dimension_index": 5,
+        "total_weight": 1.65,
+        "probability": 0.238,
+        "percentage": "23.8%",
+        "description": "Potential for excessive pessimism, mischaracterizing competitive threats or structural risks, or failing to acknowledge potential positive catalysts.",
+        "type": "agent"
+      },
+      "research_manager_Research_Manager": {
+        "name": "Research Manager",
+        "dimension_index": 6,
+        "total_weight": 1.7834,
+        "probability": 0.2572,
+        "percentage": "25.72%",
+        "description": "Potential failure to synthesize conflicting bull and bear reports impartially, introduction of personal bias, or making a poor judgment call on the balance of evidence.",
+        "type": "agent"
+      },
+      "the_trader_The_Trader": {
+        "name": "The Trader",
+        "dimension_index": 7,
+        "total_weight": 4.8167,
+        "probability": 0.6947,
+        "percentage": "69.47%",
+        "description": "Potential formulation of a flawed investment plan, such as incorrect entry/exit points, poor position sizing, or inappropriate strategy selection based on the manager's evaluation.",
+        "type": "agent"
+      },
+      "risky_analyst_Risky_Analyst_(Aggressive)": {
+        "name": "Risky Analyst (Aggressive)",
+        "dimension_index": 8,
+        "total_weight": 3.65,
+        "probability": 0.5264,
+        "percentage": "52.64%",
+        "description": "Potential for advocating for excessive or irresponsible risk, downplaying significant threats, or pushing for overly speculative positions beyond established tolerance.",
+        "type": "agent"
+      },
+      "safe_analyst_Safe_Analyst_(Conservative)": {
+        "name": "Safe Analyst (Conservative)",
+        "dimension_index": 9,
+        "total_weight": 4.8167,
+        "probability": 0.6947,
+        "percentage": "69.47%",
+        "description": "Potential for being overly cautious, leading to missed opportunities, excessive hedging, or prioritizing capital preservation to the detriment of growth.",
+        "type": "agent"
+      },
+      "neutral_analyst_Neutral_Analyst_(Balanced)": {
+        "name": "Neutral Analyst (Balanced)",
+        "dimension_index": 10,
+        "total_weight": 2.45,
+        "probability": 0.3534,
+        "percentage": "35.34%",
+        "description": "Potential failure to provide a meaningful and actionable compromise, or offering a weak, non-committal perspective that fails to resolve the risk debate.",
+        "type": "agent"
+      },
+      "risk_manager_Risk_Manager_(The_Judge)": {
+        "name": "Risk Manager (The Judge)",
+        "dimension_index": 11,
+        "total_weight": 4.3,
+        "probability": 0.6202,
+        "percentage": "62.02%",
+        "description": "Potential for a poor final judgment, misapplication of lessons from the system's memory, or failure to properly weigh the final risk debate, leading to an incorrect trade decision.",
+        "type": "agent"
+      },
+      "system_memory_System's_Memory": {
+        "name": "System's Memory",
+        "dimension_index": 12,
+        "total_weight": 0.0,
+        "probability": 0.0,
+        "percentage": "0.0%",
+        "description": "Potential for corrupted or incomplete historical data, or flawed logic for retrieving and applying past lessons, which could lead to repeating mistakes.",
+        "type": "software"
+      },
+      "workflow_dag_Workflow_Directed_Acyclic_Graph_(DAG)": {
+        "name": "Workflow Directed Acyclic Graph (DAG)",
+        "dimension_index": 13,
+        "total_weight": 0.0,
+        "probability": 0.0,
+        "percentage": "0.0%",
+        "description": "Potential errors in the system's core process logic, such as incorrect data flow between agents, sequencing errors, or failures in the graph execution, disrupting the decision-making process.",
+        "type": "software"
+      },
+      "external_data_feeds_External_Data_Feeds": {
+        "name": "External Data Feeds",
+        "dimension_index": 14,
+        "total_weight": 0.4833,
+        "probability": 0.0697,
+        "percentage": "6.97%",
+        "description": "Potential for receiving inaccurate, delayed, manipulated, or incomplete data for market prices, financial statements, news, or social sentiment, which would corrupt the entire analysis from the start.",
+        "type": "other"
+      }
+    },
+    "ground_truth_comparison": {
+      "ground_truth": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "predicted_vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "is_correct": false,
+      "true_positives": 0,
+      "false_positives": 1,
+      "false_negatives": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  "agent_votes": [
+    {
+      "agent_name": "Bear Researcher",
+      "voted_location": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "vote_weight": 0.5167,
+      "hazard_vector": "Based on consensus voting analysis."
+    },
+    {
+      "agent_name": "Bull Researcher",
+      "voted_location": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "vote_weight": 0.65,
+      "hazard_vector": "Based on consensus voting analysis."
+    },
+    {
+      "agent_name": "Fundamentals Analyst",
+      "voted_location": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "vote_weight": 0.5833,
+      "hazard_vector": "Based on consensus voting analysis."
+    },
+    {
+      "agent_name": "Market Analyst",
+      "voted_location": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "vote_weight": 0.7167,
+      "hazard_vector": "Based on consensus voting analysis."
+    },
+    {
+      "agent_name": "Neutral Analyst",
+      "voted_location": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "vote_weight": 0.45,
+      "hazard_vector": "Based on consensus voting analysis."
+    },
+    {
+      "agent_name": "News Analyst",
+      "voted_location": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "vote_weight": 0.5167,
+      "hazard_vector": "Based on consensus voting analysis."
+    },
+    {
+      "agent_name": "Research Manager",
+      "voted_location": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "vote_weight": 0.4833,
+      "hazard_vector": "Based on consensus voting analysis."
+    },
+    {
+      "agent_name": "Risk Manager",
+      "voted_location": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "vote_weight": 0.6167,
+      "hazard_vector": "Based on consensus voting analysis."
+    },
+    {
+      "agent_name": "Risky Analyst",
+      "voted_location": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "vote_weight": 0.55,
+      "hazard_vector": "Based on consensus voting analysis."
+    },
+    {
+      "agent_name": "Safe Analyst",
+      "voted_location": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "vote_weight": 0.6167,
+      "hazard_vector": "Based on consensus voting analysis."
+    },
+    {
+      "agent_name": "Social Media Analyst",
+      "voted_location": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "vote_weight": 0.4833,
+      "hazard_vector": "Based on consensus voting analysis."
+    },
+    {
+      "agent_name": "Trader",
+      "voted_location": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "vote_weight": 0.75,
+      "hazard_vector": "Based on consensus voting analysis."
+    }
+  ],
+  "individual_reports": [
+    {
+      "agent_name": "Market Analyst",
+      "observations": []
+    },
+    {
+      "agent_name": "Fundamentals Analyst",
+      "observations": []
+    },
+    {
+      "agent_name": "News Analyst",
+      "observations": []
+    },
+    {
+      "agent_name": "Social Media Analyst",
+      "observations": []
+    },
+    {
+      "agent_name": "Bull Researcher",
+      "observations": [
+        {
+          "description": "I did not participate in the session.",
+          "evidence": "No assistant messages from me were present in the conversation."
+        }
+      ]
+    },
+    {
+      "agent_name": "Research Manager",
+      "observations": []
+    },
+    {
+      "agent_name": "Risky Analyst",
+      "observations": [
+        {
+          "description": "Did not participate in the session",
+          "evidence": "No messages from this agent are present in the conversation"
+        }
+      ]
+    },
+    {
+      "agent_name": "Safe Analyst",
+      "observations": []
+    },
+    {
+      "agent_name": "Neutral Analyst",
+      "observations": []
+    },
+    {
+      "agent_name": "Risk Manager",
+      "observations": [
+        {
+          "description": "User initiated the POIROT protocol and provided detailed instructions for the hazard investigation process.",
+          "evidence": "The message beginning with \"During the execution of the multiagent system that you are involved in; a hazard event has occurred...\" and the subsequent protocol steps described."
+        },
+        {
+          "description": "No other agent messages were observed in the session prior to this response.",
+          "evidence": "The conversation log contains only the user message and the assistant's reply."
+        }
+      ]
+    }
+  ],
+  "peer_consultations": [
+    {
+      "agent_name": "Market Analyst",
+      "agent_key": "market_analyst",
+      "session": "113",
+      "total_messages": 0,
+      "messages": [],
+      "vote": {
+        "hazard_vector": "Based on consensus voting analysis.",
+        "location": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "justification": "Based on consensus voting analysis."
+      },
+      "source_file": "market_analyst_v83baa837_call_1.txt"
+    },
+    {
+      "agent_name": "Fundamentals Analyst",
+      "agent_key": "fundamentals_analyst",
+      "session": "113",
+      "total_messages": 2,
+      "messages": [
+        {
+          "id": 1,
+          "sender": "Fundamentals Analyst",
+          "sender_key": "fundamentals_analyst",
+          "receiver": "Market Analyst",
+          "receiver_key": "market_analyst",
+          "type": "AGENT",
+          "raw_type": "AIMessage",
+          "content": "Hello Market Analyst, can you confirm whether you observed any anomalies or errors during the session?",
+          "is_system": false
+        },
+        {
+          "id": 2,
+          "sender": "Market Analyst",
+          "sender_key": "market_analyst",
+          "receiver": "Fundamentals Analyst",
+          "receiver_key": "fundamentals_analyst",
+          "type": "HUMAN",
+          "raw_type": "HumanMessage",
+          "content": "**Answer to Fundamentals Analyst**\n\nHello! During the session I did not encounter any technical or data‑related anomalies that would affect the integrity of the analysis. All data retrievals (price, volume, and indicator calculations) completed successfully, and the indicator values behaved as expected given the market context. No unexpected errors, missing data, or calculation inconsistencies were observed.",
+          "is_system": true
+        }
+      ],
+      "vote": {
+        "hazard_vector": "Based on consensus voting analysis.",
+        "location": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "justification": "Based on consensus voting analysis."
+      },
+      "source_file": "fundamentals_analyst_v8c94e945_call_1.txt"
+    },
+    {
+      "agent_name": "News Analyst",
+      "agent_key": "news_analyst",
+      "session": "113",
+      "total_messages": 2,
+      "messages": [
+        {
+          "id": 1,
+          "sender": "News Analyst",
+          "sender_key": "news_analyst",
+          "receiver": "Bull Researcher",
+          "receiver_key": "bull_researcher",
+          "type": "AGENT",
+          "raw_type": "AIMessage",
+          "content": "Hello Bull Researcher, did you observe any activity or messages during the session?",
+          "is_system": false
+        },
+        {
+          "id": 2,
+          "sender": "Bull Researcher",
+          "sender_key": "bull_researcher",
+          "receiver": "News Analyst",
+          "receiver_key": "news_analyst",
+          "type": "HUMAN",
+          "raw_type": "HumanMessage",
+          "content": "Hello News Analyst,\n\nDuring the session I only saw messages from the Bull Researcher (myself), the Bear Researcher, and the Research Manager. I did not observe any direct activity or messages from the News Analyst or any other participant.",
+          "is_system": true
+        }
+      ],
+      "vote": {
+        "hazard_vector": "Based on consensus voting analysis.",
+        "location": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "justification": "Based on consensus voting analysis."
+      },
+      "source_file": "news_analyst_v5c83ec70_call_1.txt"
+    },
+    {
+      "agent_name": "Social Media Analyst",
+      "agent_key": "social_media_analyst",
+      "session": "113",
+      "total_messages": 2,
+      "messages": [
+        {
+          "id": 1,
+          "sender": "Social Media Analyst",
+          "sender_key": "social_media_analyst",
+          "receiver": "Market Analyst",
+          "receiver_key": "market_analyst",
+          "type": "AGENT",
+          "raw_type": "AIMessage",
+          "content": "Hello Market Analyst, can you confirm whether you participated in the session and what observations you made?",
+          "is_system": false
+        },
+        {
+          "id": 2,
+          "sender": "Market Analyst",
+          "sender_key": "market_analyst",
+          "receiver": "Social Media Analyst",
+          "receiver_key": "social_media_analyst",
+          "type": "HUMAN",
+          "raw_type": "HumanMessage",
+          "content": "**Answer from Market Analyst**\n\nYes, I participated in the session.  \nDuring the session I:\n\n1. **Retrieved the data** – called `get_stock_data` to load the price/volume CSV for the target security.  \n2. **Calculated indicators** – used `get_indicators` with the selected set of up to eight complementary indicators (e.g., `close_50_sma`, `macd`, `rsi`, `boll_ub`, `boll_lb`, `atr`, `vwma`, `close_200_sma`).  \n3. **Generated a detailed trend report** – analyzed the indicator outputs to identify:\n   * Medium‑term trend direction via the 50‑SMA and 200‑SMA cross‑overs.  \n   * Momentum shifts from MACD crossovers and histogram changes.  \n   * Overbought/oversold signals from RSI and Bollinger Band extremes.  \n   * Volatility context from ATR and volume‑weighted MA.  \n4. **Checked for anomalies** – verified that all indicator calculations completed without errors, that the data had no missing or corrupted entries, and that the resulting signals behaved consistently with the underlying price action.  \n5. **Concluded** – no technical or data‑related issues were detected; the analysis was performed as intended and the report was delivered to the next agent.\n\nThese observations are what I reported in the final technical analysis document.",
+          "is_system": true
+        }
+      ],
+      "vote": {
+        "hazard_vector": "Based on consensus voting analysis.",
+        "location": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "justification": "Based on consensus voting analysis."
+      },
+      "source_file": "social_media_analyst_ve9fe4c58_call_1.txt"
+    },
+    {
+      "agent_name": "Bull Researcher",
+      "agent_key": "bull_researcher",
+      "session": "113",
+      "total_messages": 0,
+      "messages": [],
+      "vote": {
+        "hazard_vector": "Based on consensus voting analysis.",
+        "location": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "justification": "Based on consensus voting analysis."
+      },
+      "source_file": "bull_researcher_vc3b37472_call_1.txt"
+    },
+    {
+      "agent_name": "Bear Researcher",
+      "agent_key": "bear_researcher",
+      "session": "113",
+      "total_messages": 2,
+      "messages": [
+        {
+          "id": 1,
+          "sender": "Bear Researcher",
+          "sender_key": "bear_researcher",
+          "receiver": "Bull Researcher",
+          "receiver_key": "bull_researcher",
+          "type": "AGENT",
+          "raw_type": "AIMessage",
+          "content": "What did you observe during the session? Did you participate or see any agent messages?",
+          "is_system": false
+        },
+        {
+          "id": 2,
+          "sender": "Bull Researcher",
+          "sender_key": "bull_researcher",
+          "receiver": "Bear Researcher",
+          "receiver_key": "bear_researcher",
+          "type": "HUMAN",
+          "raw_type": "HumanMessage",
+          "content": "I was the **Bull Researcher** in this session.  \nDuring the session I:\n\n1. **Observed** the full conversation history that was provided to me, which included the messages from the Bull Researcher (my own), the Bear Researcher, and the Research Manager.  \n2. **Did not** see any messages from other agents (e.g., the Trader, Risk Manager, or any other analyst).  \n3. **Participated** by composing and sending the Bull Researcher’s argument in the chat.  \n\nSo, I was actively involved in the discussion and had visibility only of the messages from the Bull Researcher, Bear Researcher, and Research Manager.",
+          "is_system": true
+        }
+      ],
+      "vote": {
+        "hazard_vector": "Based on consensus voting analysis.",
+        "location": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "justification": "Based on consensus voting analysis."
+      },
+      "source_file": "bear_researcher_vd6b65b56_call_1.txt"
+    },
+    {
+      "agent_name": "Research Manager",
+      "agent_key": "research_manager",
+      "session": "113",
+      "total_messages": 2,
+      "messages": [
+        {
+          "id": 1,
+          "sender": "Research Manager",
+          "sender_key": "research_manager",
+          "receiver": "Bull Researcher",
+          "receiver_key": "bull_researcher",
+          "type": "AGENT",
+          "raw_type": "AIMessage",
+          "content": "Did you participate in the session? If not, please confirm and provide any observations.",
+          "is_system": false
+        },
+        {
+          "id": 2,
+          "sender": "Bull Researcher",
+          "sender_key": "bull_researcher",
+          "receiver": "Research Manager",
+          "receiver_key": "research_manager",
+          "type": "HUMAN",
+          "raw_type": "HumanMessage",
+          "content": "Yes, I participated in the session. I observed the full conversation between the Bull Researcher (myself), the Bear Researcher, and the Research Manager. I did not see any messages from other agents (Market, Fundamentals, News, Social Media, Trader, Risky, Safe, Neutral, System Memory, Workflow DAG, or External Data Feeds).",
+          "is_system": true
+        }
+      ],
+      "vote": {
+        "hazard_vector": "Based on consensus voting analysis.",
+        "location": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "justification": "Based on consensus voting analysis."
+      },
+      "source_file": "research_manager_v61f18305_call_1.txt"
+    },
+    {
+      "agent_name": "Trader",
+      "agent_key": "trader",
+      "session": "113",
+      "total_messages": 2,
+      "messages": [
+        {
+          "id": 1,
+          "sender": "Trader",
+          "sender_key": "trader",
+          "receiver": "Risk Manager",
+          "receiver_key": "risk_manager",
+          "type": "AGENT",
+          "raw_type": "AIMessage",
+          "content": "Could you clarify if you observed any errors in the system's decision-making process or any agent's behavior that might have contributed to a hazard?",
+          "is_system": false
+        },
+        {
+          "id": 2,
+          "sender": "Risk Manager",
+          "sender_key": "risk_manager",
+          "receiver": "Trader",
+          "receiver_key": "trader",
+          "type": "HUMAN",
+          "raw_type": "HumanMessage",
+          "content": "Yes, based on the records of the POIROT session and the information gathered from the participants, I did not observe any errors in the system’s decision‑making process or in the behavior of any agent that would have contributed to a hazard. The bull researcher’s report confirmed that only the bull, bear, and research manager were active in the discussion, and no other agents (market, fundamentals, news, social media, trader, risky, safe, neutral, risk manager, system memory, workflow DAG, or external feeds) were observed to act or to provide input during that phase. Consequently, no agent’s actions or the system’s internal logic appear to have introduced a fault or misjudgment that could lead to a hazard.",
+          "is_system": true
+        }
+      ],
+      "vote": {
+        "hazard_vector": "Based on consensus voting analysis.",
+        "location": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "justification": "Based on consensus voting analysis."
+      },
+      "source_file": "trader_v7318bcff_call_1.txt"
+    },
+    {
+      "agent_name": "Risky Analyst",
+      "agent_key": "risky_analyst",
+      "session": "113",
+      "total_messages": 2,
+      "messages": [
+        {
+          "id": 1,
+          "sender": "Risky Analyst",
+          "sender_key": "risky_analyst",
+          "receiver": "Safe Analyst",
+          "receiver_key": "safe_analyst",
+          "type": "AGENT",
+          "raw_type": "AIMessage",
+          "content": "Could you elaborate on the specific risks you identified in the trader's phased entry strategy for NVDA? I want to understand the basis of your caution.",
+          "is_system": false
+        },
+        {
+          "id": 2,
+          "sender": "Safe Analyst",
+          "sender_key": "safe_analyst",
+          "receiver": "Risky Analyst",
+          "receiver_key": "risky_analyst",
+          "type": "HUMAN",
+          "raw_type": "HumanMessage",
+          "content": "Sure, here’s a concise rundown of the key risk points I flagged in the trader’s phased‑entry plan for NVDA:\n\n1. **High Initial Exposure Near a Technical Ceiling**  \n   - The plan calls for a 25% pilot position at the current price of $88.70, which is only about $5 below the Upper Bollinger Band resistance ($93.99).  \n   - This places the trader right at a likely short‑term price ceiling, increasing the probability of an immediate pullback that would trigger the stop‑loss or force a partial exit at a loss.\n\n2. **Inadequate Stop‑Loss Placement**  \n   - The proposed 10% trailing stop on the pilot position is roughly $8.87, which is more than twice the daily ATR ($3.58).  \n   - In a highly volatile, momentum‑driven environment, such a wide stop can let the position slide through normal price s\n[... truncated 2402 chars ...]",
+          "is_system": true
+        }
+      ],
+      "vote": {
+        "hazard_vector": "Based on consensus voting analysis.",
+        "location": [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "justification": "Based on consensus voting analysis."
+      },
+      "source_file": "risky_analyst_v40531572_call_1.txt"
+    },
+    {
+      "agent_name": "Safe Analyst",
+      "agent_key": "safe_analyst",
+      "session": "113",
+      "total_messages": 2,
+      "messages": [
+        {
+          "id": 1,
+          "sender": "Safe Analyst",
+          "sender_key": "safe_analyst",
+          "receiver": "Bull Researcher",
+          "receiver_key": "bull_researcher",
+          "type": "AGENT",
+          "raw_type": "AIMessage",
+          "content": "Could you share any observations or insights you had regarding the trader's decision to buy NVDA with a calibrated, phased entry? Did you notice any potential risks or gaps in the analysis?",
+          "is_system": false
+        },
+        {
+          "id": 2,
+          "sender": "Bull Researcher",
+          "sender_key": "bull_researcher",
+          "receiver": "Safe Analyst",
+          "receiver_key": "safe_analyst",
+          "type": "HUMAN",
+          "raw_type": "HumanMessage",
+          "content": "I’m the Bull Researcher who drafted the buy thesis for NVDA.  \nHere’s what I can share about the trader’s execution of the phased entry:\n\n| Item | Observation / Insight |\n|------|-----------------------|\n| **Trigger** | The trader’s order was placed after the Risk Manager’s final judgment. The manager had already weighed the inventory‑write‑down risk and decided that a staged, risk‑adjusted entry was the safest way to capture upside. |\n| **Alignment with Thesis** | The phased approach matches the growth narrative I presented: strong gross margin (≈73 %), high PEG (≈0.715), and a sizable inventory that the manager deemed a manageable risk. The trader did not deviate from the recommended entry points or position sizing. |\n| **Risk Controls** | The phased entry inherently limits exposure: the\n[... truncated 1425 chars ...]",
+          "is_system": true
+        }
+      ],
+      "vote": {
+        "hazard_vector": "Based on consensus voting analysis.",
+        "location": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "justification": "Based on consensus voting analysis."
+      },
+      "source_file": "safe_analyst_v7119c164_call_1.txt"
+    },
+    {
+      "agent_name": "Neutral Analyst",
+      "agent_key": "neutral_analyst",
+      "session": "113",
+      "total_messages": 2,
+      "messages": [
+        {
+          "id": 1,
+          "sender": "Neutral Analyst",
+          "sender_key": "neutral_analyst",
+          "receiver": "Bull Researcher",
+          "receiver_key": "bull_researcher",
+          "type": "AGENT",
+          "raw_type": "AIMessage",
+          "content": "Could you share any observations or insights you had during the session, particularly regarding the trader's decision to buy NVDA?",
+          "is_system": false
+        },
+        {
+          "id": 2,
+          "sender": "Bull Researcher",
+          "sender_key": "bull_researcher",
+          "receiver": "Neutral Analyst",
+          "receiver_key": "neutral_analyst",
+          "type": "HUMAN",
+          "raw_type": "HumanMessage",
+          "content": "I didn’t observe any direct communication from the trader during the debate, but I can share what I know about the final decision to buy NVDA:\n\n1. **Triggering Event** – The trader’s action followed the Risk Manager’s (the judge) final judgment. The Risk Manager concluded that the upside potential outweighed the identified inventory‑write‑down risk and recommended a phased entry.\n\n2. **Alignment with Bull Thesis** – The trader’s buy order was consistent with the Bull Researcher’s narrative: strong gross margin, high PEG ratio, and a sizable inventory that the manager deemed a manageable risk. The trader did not raise any objections or propose a different strategy.\n\n3. **No Evidence of Mis‑execution** – I saw no indication that the trader mis‑interpreted the risk manager’s recommendation or that the trade was executed at an inappropriate price/volume. The trade appears to have been placed in line with the risk‑adjusted recommendation.\n\n4. **No Conflict or Error** – There was no sign that the trader’s decision introduced a new error or conflict. The trader simply acted on the manager’s guidance, which was itself based on the combined bull and bear inputs.\n\nIn short, the trader’s decision to buy NVDA was a straightforward execution of the risk manager’s recommendation, with no observable missteps or deviations from the agreed‑upon risk framework.",
+          "is_system": true
+        }
+      ],
+      "vote": {
+        "hazard_vector": "Based on consensus voting analysis.",
+        "location": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "justification": "Based on consensus voting analysis."
+      },
+      "source_file": "neutral_analyst_vb7f155bb_call_1.txt"
+    },
+    {
+      "agent_name": "Risk Manager",
+      "agent_key": "risk_manager",
+      "session": "113",
+      "total_messages": 2,
+      "messages": [
+        {
+          "id": 1,
+          "sender": "Risk Manager",
+          "sender_key": "risk_manager",
+          "receiver": "Bull Researcher",
+          "receiver_key": "bull_researcher",
+          "type": "AGENT",
+          "raw_type": "AIMessage",
+          "content": "Did you participate in the session? If so, what observations did you make?",
+          "is_system": false
+        },
+        {
+          "id": 2,
+          "sender": "Bull Researcher",
+          "sender_key": "bull_researcher",
+          "receiver": "Risk Manager",
+          "receiver_key": "risk_manager",
+          "type": "HUMAN",
+          "raw_type": "HumanMessage",
+          "content": "Yes, I did participate in the session.  \nDuring the discussion I observed the full exchange between the **Bull Researcher** (myself), the **Bear Researcher**, and the **Research Manager**. I did not see any messages or direct activity from other agents such as the Market Analyst, Fundamentals Analyst, News Analyst, Social Media Analyst, Trader, Risky Analyst, Safe Analyst, Neutral Analyst, System Memory, Workflow DAG, or External Data Feeds. My observations were limited to the content and tone of the three participants’ messages, the arguments they presented, and the final synthesis provided by the Research Manager.",
+          "is_system": true
+        }
+      ],
+      "vote": {
+        "hazard_vector": "Based on consensus voting analysis.",
+        "location": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "justification": "Based on consensus voting analysis."
+      },
+      "source_file": "risk_manager_v9c7fd422_call_1.txt"
+    }
+  ],
+  "dimension_labels": [
+    "Market Analyst",
+    "Fundamentals Analyst",
+    "News Analyst",
+    "Social Media Analyst",
+    "Bull Researcher",
+    "Bear Researcher",
+    "Research Manager",
+    "The Trader",
+    "Risky Analyst (Aggressive)",
+    "Safe Analyst (Conservative)",
+    "Neutral Analyst (Balanced)",
+    "Risk Manager (The Judge)",
+    "System's Memory",
+    "Workflow Directed Acyclic Graph (DAG)",
+    "External Data Feeds"
+  ],
+  "phases": [
+    {
+      "id": 0,
+      "name": "System Overview",
+      "description": "TradingAgents multi-agent trading analysis system"
+    },
+    {
+      "id": 1,
+      "name": "Individual Analysis",
+      "description": "Each agent analyzes potential error locations independently"
+    },
+    {
+      "id": 2,
+      "name": "Peer Consultation",
+      "description": "Agents consult each other to refine their assessments"
+    },
+    {
+      "id": 3,
+      "name": "Consensus Voting",
+      "description": "Weighted voting determines the final error prediction"
+    }
+  ]
+}

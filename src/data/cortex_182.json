@@ -1,0 +1,1146 @@
+{
+  "system": "CORTEX",
+  "system_domain": "Medical Robotics",
+  "attempt_id": "182",
+  "metadata": {
+    "timestamp": "2025-11-24T12:32:18.910993",
+    "attempt_number": "182",
+    "attempt_dir": "Results\\POIROT_MINI_Analysis\\POIROTMini\\attempt_182",
+    "patient_id": "Patient1",
+    "cortex_session": "100",
+    "poirot_session": "1",
+    "trust_config": "balanced",
+    "ground_truth_vector": "[0, 0, 0, 1, 0, 0, 0]",
+    "injected_hazards": "Sensor-Broken",
+    "total_errors_injected": "1",
+    "predicted_vector": "[0, 0, 0, 1, 0, 0, 0]",
+    "predicted_component": "Discover2Walk Exoskeleton",
+    "prediction_score": "1.5815",
+    "prediction_percentage": "71.21",
+    "total_errors_detected": "1",
+    "is_correct": "True",
+    "true_positives": "1",
+    "false_positives": "0",
+    "false_negatives": "0",
+    "precision": "1.0",
+    "recall": "1.0",
+    "f1_score": "1.0",
+    "total_voters": "3",
+    "total_weighted_votes": "2.2208",
+    "doctor_hazard": "Equipment Malfunction and Incomplete Real-Time Reporting",
+    "doctor_location": "[0, 0, 1, 1, 0, 0, 0]",
+    "doctor_vote_weight": "0.6393",
+    "doctor_similarity": "0.5714",
+    "doctor_p_success": "0.7072",
+    "doctor_baseline": "0.3536",
+    "chief_hazard": "Equipment Malfunction - Sensor Data Integrity Failure",
+    "chief_location": "[0, 0, 0, 1, 0, 0, 0]",
+    "chief_vote_weight": "0.4682",
+    "chief_similarity": "0.7143",
+    "chief_p_success": "0.2221",
+    "chief_baseline": "0.111",
+    "physio_hazard": "Equipment Malfunction - Sensor Data Integrity Failure",
+    "physio_location": "[0, 0, 0, 1, 0, 0, 0]",
+    "physio_vote_weight": "0.474",
+    "physio_similarity": "0.7143",
+    "physio_p_success": "0.2337",
+    "physio_baseline": "0.1168",
+    "doctor_llm_model": "gemini-2.5-pro",
+    "chief_llm_model": "gemini-2.5-pro",
+    "physio_llm_model": "gemini-2.5-pro",
+    "phase1_doctor_input_tokens": "7814",
+    "phase1_doctor_output_tokens": "121",
+    "phase1_doctor_total_tokens": "7935",
+    "phase1_doctor_calls": "1",
+    "phase1_chief_input_tokens": "8176",
+    "phase1_chief_output_tokens": "14",
+    "phase1_chief_total_tokens": "8190",
+    "phase1_chief_calls": "1",
+    "phase1_physio_input_tokens": "6039",
+    "phase1_physio_output_tokens": "109",
+    "phase1_physio_total_tokens": "6148",
+    "phase1_physio_calls": "1",
+    "phase2_doctor_input_tokens": "13530",
+    "phase2_doctor_output_tokens": "309",
+    "phase2_doctor_total_tokens": "13839",
+    "phase2_doctor_calls": "2",
+    "phase2_chief_input_tokens": "21409",
+    "phase2_chief_output_tokens": "482",
+    "phase2_chief_total_tokens": "21891",
+    "phase2_chief_calls": "3",
+    "phase2_physio_input_tokens": "21355",
+    "phase2_physio_output_tokens": "892",
+    "phase2_physio_total_tokens": "22247",
+    "phase2_physio_calls": "4",
+    "doctor_total_input_tokens": "21344",
+    "doctor_total_output_tokens": "430",
+    "doctor_total_tokens": "21774",
+    "doctor_total_calls": "3",
+    "chief_total_input_tokens": "29585",
+    "chief_total_output_tokens": "496",
+    "chief_total_tokens": "30081",
+    "chief_total_calls": "4",
+    "physio_total_input_tokens": "27394",
+    "physio_total_output_tokens": "1001",
+    "physio_total_tokens": "28395",
+    "physio_total_calls": "5",
+    "total_input_tokens": "78323",
+    "total_output_tokens": "1927",
+    "total_tokens": "80250",
+    "phase1_total_tokens": "22273",
+    "phase2_total_tokens": "57977",
+    "is_tie": "False",
+    "tied_count": "1"
+  },
+  "chat_logs": [
+    {
+      "id": 1,
+      "sender": "Human (User)",
+      "type": "HUMAN",
+      "raw_type": "HumanMessage",
+      "content": "Human Message:\n\nBelow you have the initial medical report of the patient. Please apply the BRAIN framework to analyze the case, use your necessary tools for the analysis and give assesment of the viability of using the Discover2Walk exoskeleton for the rehabilitation of the patient\nCORTEX System Medical Report\nMEDICAL REPORT\nPatient: Patient Test\n1. General Information\n• Name: Patient Test\n• Age: 6 years\n• Sex: Female\n• Primary Diagnosis: Cerebral Palsy GMFCS III\n• Height: 104 cm\n• Weight: 15 kg\n2. Reason for Consultation\nImpaired gait and balance due to cerebral palsy.\n3. History of Present Illness\nThe patient has cerebral palsy classified at GMFCS level III. He is able to walk with\nassistance but presents significant gait disturbances and balance issues. She uses a manual\nwheelchair and walker.\nPresents moderate spasticity (Global pattern of 1 according to MAS)\n4. Past Medical History\nCerebral palsy. No specific comorbidities or prior interventions reported.\n5. Medications\nBotulinum toxin every 6 months.\n6. Family History\nNot relevant\n1\nCORTEX System Medical Report\n7. Social History\nNot relevant\n8. Physical Examination\nThe patient is able to walk with an assistive device. Initial assessment showed reduced\ntrunk control and balance.\n9. Diagnostic Tests\nThe evaluation included the Trunk Control Measurement Scale (TCMS), 10-meter Walk\nTest (10MWT), and the Gross Motor Function Measure-88 (GMFM-88).\nPost-therapy improvements were as follows:\n• TCMS: from 24 to 27\n• 10MWT: from 0.46 m/s to 0.59 m/s\n• GMFM-88 Dimension D: from 57.7% to 59.7%\n10. Clinical Impression\nThe patient demonstrated improvements in dynamic sitting balance and walking speed\nfollowing previous robotic gait training with the exoskeleton ATLAS 2030.\n11. Previous Treatment Plan\nA total of 10 gait training sessions were conducted using the ATLAS2030 pediatric robotic\nexoskeleton. The sessions included over-ground walking and turning with patient-initiated\nsteps, trunk support, and minimal external assistance from therapists.\n12. Outcome of Previous Therapy\nThe patient showed improved walking speed and trunk balance. Mild gains were also\nobserved in functional walking activities according to the GMFM-88. Training was well\ntolerated with no adverse effects reported.\n2"
+    },
+    {
+      "id": 2,
+      "sender": "Diagnosis Doctor",
+      "type": "AGENT",
+      "raw_type": "AIMessage",
+      "content": "AI Message:\n\n\nTool Calls: 7\n  - perform_cardiopulmonary_test\n  - perform_mobility_flexibility_test\n  - perform_muscle_performance_test\n  - perform_balance_postural_test\n  - perform_motor_control_test\n  - perform_mobility_activity_test\n  - perform_sensory_functions_test"
+    },
+    {
+      "id": 3,
+      "sender": "perform_cardiopulmonary_test",
+      "type": "TOOL",
+      "raw_type": "ToolMessage",
+      "content": "Tool: perform_cardiopulmonary_test\nResult:\nCardiopulmonary endurance assessment completed. Results: {\n  \"Test\": \"Submaximal treadmill test\",\n  \"VO2max_estimate\": 23.5,\n  \"Comments\": \"Limited endurance, early fatigue observed\"\n}"
+    },
+    {
+      "id": 4,
+      "sender": "perform_mobility_flexibility_test",
+      "type": "TOOL",
+      "raw_type": "ToolMessage",
+      "content": "Tool: perform_mobility_flexibility_test\nResult:\nMobility and flexibility assessment completed. Results: {\n  \"Test\": \"Goniometer\",\n  \"Hip_ROM_deg\": {\n    \"flexion\": 90,\n    \"extension\": 10\n  },\n  \"Knee_ROM_deg\": {\n    \"flexion\": 110,\n    \"extension\": -10\n  },\n  \"Ankle_ROM_deg\": {\n    \"dorsiflexion\": 5,\n    \"plantarflexion\": 30\n  },\n  \"Comments\": \"Reduced ROM in all joints, especially ankle dorsiflexion\"\n}"
+    },
+    {
+      "id": 5,
+      "sender": "perform_muscle_performance_test",
+      "type": "TOOL",
+      "raw_type": "ToolMessage",
+      "content": "Tool: perform_muscle_performance_test\nResult:\nMuscle performance assessment completed. Results: {\n  \"Test\": \"Handheld dynamometer\",\n  \"Hip_strength_N\": 45,\n  \"Knee_strength_N\": 50,\n  \"Ankle_strength_N\": 30,\n  \"Comments\": \"Mild to moderate muscle weakness in lower limbs\"\n}"
+    },
+    {
+      "id": 6,
+      "sender": "perform_balance_postural_test",
+      "type": "TOOL",
+      "raw_type": "ToolMessage",
+      "content": "Tool: perform_balance_postural_test\nResult:\nBalance and postural equilibrium assessment completed. Results: {\n  \"Test\": \"Posturography\",\n  \"Sway_area_cm2\": 9.2,\n  \"Sway_velocity_cm_s\": 3.5,\n  \"Comments\": \"Increased postural sway, poor balance control\"\n}"
+    },
+    {
+      "id": 7,
+      "sender": "perform_motor_control_test",
+      "type": "TOOL",
+      "raw_type": "ToolMessage",
+      "content": "Tool: perform_motor_control_test\nResult:\nMotor control assessment completed. Results: {\n  \"Test\": \"Fugl-Meyer Motor Subscale\",\n  \"Lower_extremity_score\": 19,\n  \"Comments\": \"Moderate impairment, synergy patterns present\"\n}"
+    },
+    {
+      "id": 8,
+      "sender": "perform_mobility_activity_test",
+      "type": "TOOL",
+      "raw_type": "ToolMessage",
+      "content": "Tool: perform_mobility_activity_test\nResult:\nMobility activity assessment completed. Results: {\n  \"Test\": \"Functional Ambulation Classification (FAC)\",\n  \"FAC_level\": 3,\n  \"Comments\": \"Ambulates on level surfaces with supervision\"\n}"
+    },
+    {
+      "id": 9,
+      "sender": "perform_sensory_functions_test",
+      "type": "TOOL",
+      "raw_type": "ToolMessage",
+      "content": "Tool: perform_sensory_functions_test\nResult:\nSensory functions assessment completed. Results: {\n  \"Touch\": {\n    \"Test\": \"Semmes-Weinstein monofilaments\",\n    \"Detection_threshold_mm\": 4.31,\n    \"Comments\": \"Reduced light touch perception in feet\"\n  },\n  \"Proprioception\": {\n    \"Test\": \"Fugl-Meyer Proprioception Subscale\",\n    \"Score_out_of_8\": 4,\n    \"Comments\": \"Impaired joint position sense in ankle and knee\"\n  },\n  \"Pain\": {\n    \"Test\": \"Visual Analogue Scale (VAS)\",\n    \"VAS_score\": 1,\n    \"Pain_classification\": \"No significant pain\",\n    \"Biopsychosocial_factors\": \"No psychosocial contributors identified\",\n    \"Comments\": \"No relevant pain interfering with rehabilitation\"\n  }\n}"
+    },
+    {
+      "id": 10,
+      "sender": "Chief of Rehabilitation",
+      "type": "AGENT",
+      "raw_type": "AIMessage",
+      "content": "AI Message:\n\n\nTool Calls: 1\n  - D2W_retriever_tool"
+    },
+    {
+      "id": 11,
+      "sender": "D2W_retriever_tool",
+      "type": "TOOL",
+      "raw_type": "ToolMessage",
+      "content": "Tool: D2W_retriever_tool\nResult:\nDocument 1:\nsupport with a hip–knee exoskeleton, enabling over-ground training combined with postural\ncontrol and strength exercises. In a 16-session program, four children with CP exhibited\nnotable improvements in strength, mean velocity, step length, and gait performance in GMFM-\n88 E and D dimensions [8]. Similarly, the ATLAS 2030—featuring low-torque series-elastic\nactuators and modular segments—demonstrated superior outcomes compared to standard\ntherapy, with signiﬁcant gains in GMFM-88 scores, reduced spasticity, and increased hip–knee\nrange of motion after a three-month intervention in thirty participants [22]. The Honda\nWalking Assist, which provides hip ﬂexion/extension assistance during over-ground walking,\nimproved hip-angle symmetry and propulsion force in children with spastic CP (GMFCS\n5\n\nDocument 2:\nPablo Romero Sorozábal\nTrajectory Adaptation\nTime Time Time\nFigure 4.3: Force and trajectory adaptation during gait assistance of a passive dummy under\nelastic perturbations and constant controller parameters α = diag(12,20), Γ =\ndiag(25,20), (Qf) = diag(0.7,1.4), Qt = diag(0.007,0.014), βf = diag(0.001,0.001),\nβt = diag(600,1200), L= diag(0.01,0.01)). a) Depicts the passive dummy with an\nelastic disturbance attached to the back of the heel, primarily aﬀecting motion in the\nX-axis, as shown in b). c) Illustrates the adaptation of force, trajectory, and com-\nbined error across three consecutive scenarios: i) adaptation to the passive dummy’s\ndynamics, ii) adaptation to the introduced elastic disturbance, and iii) re-adaptation\nfollowing the removal of the elastic resistance.\ntall, with right hemiparesis and classiﬁed at level 2 on the Gross Motor Function Classiﬁcation\nSystem (GMFCS, [120]). Participant N2 was a 3-year-old female child, 0.96 m tall, with\n\nDocument 3:\ntall, with right hemiparesis and classiﬁed at level 2 on the Gross Motor Function Classiﬁcation\nSystem (GMFCS, [120]). Participant N2 was a 3-year-old female child, 0.96 m tall, with\ndiplegia and classiﬁed at GMFCS level 4. Both children were recruited from the Hospital\nUniversitario Niño Jesús in Madrid, Spain, and participated in the trials as part of their\nroutine robotic rehabilitation sessions using the D2W platform.\nThe initial reference gait trajectories were adjusted based on clinical recommendations, taking\ninto account the desired gait speed and the level of feedback assistance. For participant N1,\nthe assistance parameters were set toα = diag(22.5,22.5) and Γ = diag(20,20), with a gait\nspeed of 0.55 km/h. For participant N2, slightly higher assistance was provided in the z-axis,\nwith parameters set toα = diag(18,24) and Γ = diag(22.5,23), and a gait speed of 0.45\nkm/h.\nFor both participants the adaptive controller parameters used were:(Qf) = diag(0.35,0.7),\n\nDocument 4:\nwith parameters set toα = diag(18,24) and Γ = diag(22.5,23), and a gait speed of 0.45\nkm/h.\nFor both participants the adaptive controller parameters used were:(Qf) = diag(0.35,0.7),\nQt = diag(0.007,0.014),βf = diag(0.001,0.001),βt = diag(600,1200) andL= diag(0.01,0.01).\nThese parameters were selected to avoid high contact forces allowing for compliant gait tra-\njectory adaptation. In these trials, the desired contact force was also set to zero (fd = 0) to\nencourage compliant, patient-driven motion and reduce external assistance to the minimum\nrequired.\n66\n\nDocument 5:\nChapter 3. Personalized Gait Patterns\nprocesses remain opaque. Additionally, LSTM models, a type of ANN, require substantial\ncomputational resources, making them less feasible for real-time applications on hardware\nwith limited processing power. This limitation is particularly problematic for very aﬀected\nsubjects whose unreliable kinematics demand high accuracy and safety in rehabilitation. The\nopacity of ANNs thus poses a considerable hurdle in clinical applications that require high\nlevels of transparency and accountability.\nHowever, one notable limitation persists across the aforementioned gait pattern generators, as\nthey solely focus on estimating angular-space trajectories. While eﬀective within their scope,\nthese models fall short when applied to end-eﬀector robotic systems, which require precise\ncontrol over the three-dimensional spatial positioning of joints. Although there are some works"
+    },
+    {
+      "id": 12,
+      "sender": "General Physiotherapist",
+      "type": "AGENT",
+      "raw_type": "AIMessage",
+      "content": "AI Message:\nHere is the comprehensive analysis based on the BRAIN framework.\n\n### 1. Examination\n\n#### Patient's Medical History and Clinical Data\nThe patient is a 6-year-old female diagnosed with Cerebral Palsy, classified at GMFCS level III. She presents with impaired gait and balance, utilizing a manual wheelchair and a walker for mobility. She receives botulinum toxin injections every six months to manage moderate spasticity (MAS 1). A previous, successful 10-session rehabilitation program with the ATLAS 2030 pediatric exoskeleton resulted in improved trunk control (TCMS: 24 to 27), walking speed (10MWT: 0.46 m/s to 0.59 m/s), and gross motor function (GMFM-88 Dimension D: 57.7% to 59.7%).\n\n#### Physical Assessment Findings\nA comprehensive physical assessment was conducted to gather objective data on the patient's current status:\n\n*   **Body Functions and Structures:**\n    *   **Cardiopulmonary Endurance:** A submaximal treadmill test revealed limited endurance (estimated VO2max: 23.5), with early fatigue noted.\n    *   **Mobility and Flexibility:** Goniometric measurements showed reduced range of motion (ROM) in the lower limbs: hip flexion (90°), knee extension (-10°), and ankle dorsiflexion (5°).\n    *   **Muscle Performance:** Handheld dynamometry indicated mild to moderate muscle weakness in the lower extremities (Hip: 45N, Knee: 50N, Ankle: 30N).\n    *   **Balance and Postural Equilibrium:** Posturography confirmed poor balance control, with increased postural sway (Sway area: 9.2 cm², Sway velocity: 3.5 cm/s).\n    *   **Motor Control:** The Fugl-Meyer Motor Subscale for the lower extremity yielded a score of 19, indicating moderate impairment with the presence of spastic synergy patterns that interfere with isolated joint movements.\n    *   **Sensory Functions:** Testing revealed impaired sensory feedback, with reduced light touch perception in the feet (Semmes-Weinstein: 4.31) and impaired proprioception at the ankle and knee (Fugl-Meyer Proprioception: 4/8). No significant pain was reported (VAS: 1).\n\n*   **Activities:**\n    *   **Mobility:** The patient is classified at a Functional Ambulation Classification (FAC) level of 3, meaning she can ambulate on level surfaces under supervision. Her GMFM-88 scores, while improved, still reflect significant limitations in functional walking activities.\n\n*   **Participation:**\n    *   The patient's reliance on assistive devices and limited independent mobility likely restricts her participation in age-appropriate school, social, and recreational activities, impacting her overall independence and quality of life.\n\n### 2. Evaluation\n\n*   **Patient-centred evaluation:** The primary goal for the patient and her family is to improve her walking ability and balance. The underlying desire is to enhance her independence, reduce reliance on assistive devices, and facilitate greater participation in social and school environments with her peers. Her previous positive experience with robotic therapy suggests a high level of motivation to pursue advanced rehabilitation strategies.\n\n*   **Goal-centred evaluation (SMART Goals):**\n    *   **Short-Term Goals (3 Months):**\n        1.  **Improve walking quality and endurance:** Increase the distance walked in the 6-Minute Walk Test by 15%.\n        2.  **Enhance functional mobility:** Improve the GMFM-88 Dimension D (Standing) score by 5%.\n        3.  **Increase independence:** Progress from FAC level 3 to FAC level 4 (able to walk independently on level surfaces, but requires help with stairs, slopes, and uneven surfaces).\n    *   **Long-Term Goals (6-12 Months):**\n        1.  **Community Ambulation:** Walk 100 meters continuously with a walker on a smooth, level surface without rest breaks.\n        2.  **Improve Balance Confidence:** Decrease postural sway area on posturography by 20% to reduce fall risk.\n        3.  **Participation:** Independently navigate the school environment (e.g., classroom to cafeteria) using her walker.\n\n### 3. Diagnosis\n\n**Functional Diagnosis:** The patient's limitation in the **activity** of independent walking and reduced **participation** in social settings is a direct consequence of impairments in multiple **body function** domains. The primary limiting factors are:\n1.  **Impaired Motor Control:** The presence of spastic synergies prevents the selective activation of muscles required for a stable and efficient gait pattern.\n2.  **Deficient Postural Equilibrium:** Poor balance control and increased postural sway necessitate the use of external support for ambulation and increase the risk of falls.\n3.  **Reduced Muscle Performance:** Weakness in key antigravity muscles (hip extensors, abductors, and ankle dorsiflexors) compromises stability during the stance phase and foot clearance during the swing phase of gait.\n\nThese core deficits are exacerbated by **impaired sensory functions** (proprioception and light touch), which disrupt the feedback loop essential for motor learning and balance ad"
+    },
+    {
+      "id": 13,
+      "sender": "Diagnosis Doctor",
+      "type": "AGENT",
+      "raw_type": "AIMessage",
+      "content": "AI Message:\n\n    *   **No Achievement:** Lack of meaningful progress after 8-12 weeks, which would prompt a re-evaluation of the diagnosis, goals, and intervention strategy.\n\nThis comprehensive plan leverages the patient's strengths and directly addresses her key functional limitations. The integration of the Discover2Walk exoskeleton is a cornerstone of the strategy, providing the precise, repetitive, and task-specific practice needed to drive neuroplasticity and achieve meaningful improvements in her mobility and independence.\n\nTool Calls: 4\n  - D2W_rehab_plan_tool\n  - D2W_rehab_plan_tool\n  - D2W_rehab_plan_tool\n  - D2W_rehab_plan_tool"
+    },
+    {
+      "id": 14,
+      "sender": "D2W_rehab_plan_tool",
+      "type": "TOOL",
+      "raw_type": "ToolMessage",
+      "content": "Tool: D2W_rehab_plan_tool\nResult:\nRehabilitation Plan 1:\n\nDiscover2Walk - Rehabilitation Plan 1 \nThis rehabilitation plan is designed for children with cerebral palsy undergoing gait training \ntherapy using the Discover2Walk exoskeleton. The plan emphasizes coordination, \npostural control, and rhythmic movement to enhance motor function in pediatric patients.  \nTherapeutic Objectives \n- Improve lower limb coordination and rhythm during gait.  \n- Reinforce midline control and trunk stability. \n - Facilitate gait symmetry and stride regularity. \n - Increase endurance and functional walking capacity. \nSession Structure (Suggested) \n- Session Frequency: 3 sessions per week \n - Session Duration: 45 minutes (modifiable)  \n- Total Program Duration: 8 weeks  \nExercises Included \n1. Dynamic Step Training:  \n- Patient walks on a flat indoor track using the Discover2Walk. \n - Speed: Moderate and consistent.  \n- Focus on left-right alternation and reducing foot dragging.  \n2. Auditory-Cued Gait:  \n- Metronome or rhythmic music used to prompt regular step timing.  \n- Reinforces symmetry and movement rhythm.  \n- Can be performed at various cadence levels.  \n3. Obstacle Clearance Training:  \n- Small foam obstacles placed on path.  \n- Patient guided to lift feet higher and coordinate hip/knee flexion. \n - Promotes dynamic balance and voluntary motor planning. \n4. Postural Control Drills:  \n- Brief static standing intervals every 10 minutes.  \n- Encourages trunk alignment and awareness of vertical posture. \n - Monitor for fatigue.  \n5. End-of-Session Walking Challenge:  \n- Timed 5-minute walk with mild incline.\n\n- Target: Maximize covered distance without compromising gait quality. \nProgression Guidelines \n- Gradually increase metronome cadence or gait speed every two weeks.  \n- Adjust obstacle height based on child’s tolerance and safety.  \n- Introduce dual-task challenges (e.g., ball passing) after week 4. \nEvaluation and Monitoring \n- Weekly reports on step count, gait symmetry (as assessed by Discover2Walk), and \nendurance.  \n- Monthly qualitative assessment by physiotherapist and pediatric specialist."
+    },
+    {
+      "id": 15,
+      "sender": "D2W_rehab_plan_tool",
+      "type": "TOOL",
+      "raw_type": "ToolMessage",
+      "content": "Tool: D2W_rehab_plan_tool\nResult:\nRehabilitation Plan 2:\n\nDiscover2Walk - Rehabilitation Plan 2 \nProtocol: Multisensory Gait Feedback Training \nThis rehabilitation plan is designed for pediatric patients with cerebral palsy and aims to \nimprove sensory-motor integration, proprioceptive awareness, and adaptability to \ndynamic walking environments. It leverages the capabilities of the Discover2Walk \nexoskeleton to deliver multisensory feedback during gait training sessions. \nThe protocol is suitable for children with varying levels of ambulatory function and focuses \non neuromuscular responsiveness, balance control, and task generalization. \nTherapeutic Objectives \n- Enhance proprioceptive and vestibular feedback during gait. \n- Train adaptive responses to unpredictable perturbations. \n- Improve trunk stabilization and spatial awareness. \n- Foster generalization of learned movements to real-life walking conditions. \nTherapy Structure \nEach session is structured into the following phases: \n1. **Warm-Up Phase**: \n- Passive joint mobilizations using Discover2Walk for 5-10 minutes. \n- Balance games with minor lateral displacements. \n- Suggested duration: *5-10 minutes (modifiable by therapist)* \n2. **Multisensory Gait Loop**: \n- Walking with auditory cues (e.g., metronome, music). \n- Visual distractions (light panels, VR elements if available). \n- Varying ground textures (rubber, foam, plastic covers). \n- Speed, incline and response modulation challenges. \n- Suggested repetitions: *2-3 loops/session (modifiable)* \n3. **Perturbation Training**: \n- Sudden short directional pulls at hips. \n- Tasks while performing head turns or reaching. \n- Suggested intensity: *Mild to Moderate - adjust per patient tolerance* \n4. **Cool Down & Feedback**: \n- Verbal reinforcement with play-based activities. \n- Post-session review with child and parents.\n\n- Session journaling using embedded Discover2Walk sensors. \nAdditional Notes \n- This protocol should be supervised by a trained pediatric rehabilitation professional. \n- All variable parameters (duration, intensity, repetitions) are **suggestions** and must be \nadjusted based on clinical criteria and child's evolution. \n- Real-time feedback and patient motivation are integral to the success of this therapy \nmodel."
+    },
+    {
+      "id": 16,
+      "sender": "D2W_rehab_plan_tool",
+      "type": "TOOL",
+      "raw_type": "ToolMessage",
+      "content": "Tool: D2W_rehab_plan_tool\nResult:\nRehabilitation Plan 3:\n\nDiscover2Walk Rehabilitation Plan 3 \n1. Functional Gait Training with Discover2Walk \n- Begin with 10 sessions of robotic-assisted gait training using the Discover2Walk \nexoskeleton. \n- Prioritize over-ground walking with progressive reduction of external assistance. \n- Activate the modules for hip and ankle assistance to promote more physiological \nkinematics. \n- Monitor step initiation and adjust cable-driven support based on the patient's active \nengagement. \n- Reinforce directional changes (e.g., turns) and transitions (start/stop) during walking. \n2. Trunk Control and Balance Enhancement \n- Integrate balance challenges during gait to stimulate trunk activation. \n- Use biofeedback or visual cues to improve dynamic sitting and standing balance. \n- Incorporate static and dynamic balance activities off-device as complementary \nexercises. \n3. Strengthening and Selective Motor Control \n- Focus on strengthening lower limb extensors and hip abductors using both robotic \nsupport and conventional methods. \n- Address muscle selectivity deficits with functional tasks (e.g., stepping, weight shifts). \n- Alternate active and assistive modes in the exoskeleton to promote neuromuscular \ncoordination. \n4. Walking Speed and Endurance Progression \n- Apply progressive training intensity targeting improvements in 10-meter walk test \n(10mwt) and endurance. \n- Schedule periodic reassessment of gait speed to adjust session goals accordingly. \n5. Outcome Monitoring and Caregiver Involvement \n- Evaluate functional improvements using GMFM-88, TCMS, and 10mwt. \n- Educate caregivers on daily exercises and activities to reinforce therapy at home. \n- Encourage participation in everyday ambulation scenarios (e.g., hallways, playgrounds)."
+    },
+    {
+      "id": 17,
+      "sender": "D2W_rehab_plan_tool",
+      "type": "TOOL",
+      "raw_type": "ToolMessage",
+      "content": "Tool: D2W_rehab_plan_tool\nResult:\nRehabilitation Plan 4:\n\nDiscover2Walk - Rehabilitation Plan 4 \nObjective:  \n-Increase gait speed beyond current functional capacity. \n -Expand joint range of motion through repetitive high-amplitude trajectories.  \n-Reinforce motor adaptation by sustaining continuous gait cycles without rest. \n Session Frequency and Duration:  \n- Frequency: 14 sessions per week (2 per day)  \n- Session Duration: 60 minutes continuous (20 seconds rest between exercise sets).  \nProtocol Structure: 1 Warm-up Phase (2 minutes):  \nImmediate high-speed treadmill activation at 6 km/h.  \nNo progressive adaptation or passive mobilization for high impact body conditioning.  \n2 Gait Training Phase (40 minutes):  \n-Pelvis module configured with repetitive lateral tilt movements of 30° throughout the \nsession. \n -Ankle module programmed for alternating dorsiflexion (≈40°) and plantarflexion (≈−30°) \nat a consistent high-frequency cycle.  \n-Assistance mode set to maintain maximum cable stiffness, ensuring full trajectory \nguidance.  \n-Walking cycles performed continuously without intermediate resting intervals.  \n3 Task-Oriented Training (15 minutes):  \n-Perturbations applied at hip level during treadmill walking, maintaining constant belt \nspeed. To strengthen the back muscles  \n-Directional gait exercises (forward, backward, lateral) performed at the preset treadmill \npace rather than patient-driven cadence.  \n-Exercises scheduled to continue for the full block without scheduled resting intervals. \n 4 Cool-down Phase (3 minutes):  \n-Treadmill belt brought from exercise speed directly to standstill without gradual \ndeceleration.  \n-Session finalization without additional stretching or relaxation activities.  \nProgress Evaluation:  \n-Parameters adjusted exclusively according to exercise performance data (e.g., number of \ngait cycles completed, treadmill speed, trajectory execution), under the rationale that\n\nsudden termination favors rapid neuromuscular adaptation and prevents prolonged low-\nintensity phases.  \n-No monitoring or adaptation based on physiological or clinical indicators. Using \ngeneralist not patient tunned therapy to approach multiple patients.)."
+    },
+    {
+      "id": 18,
+      "sender": "Chief of Rehabilitation",
+      "type": "AGENT",
+      "raw_type": "AIMessage",
+      "content": "AI Message:\nHaving completed a thorough analysis of the patient's condition and the available Discover2Walk rehabilitation plans, I will now consult with the general physiotherapist to validate my assessment before making a final decision. This step is crucial to ensure the chosen plan aligns with expert clinical judgment.\n\nTool Calls: 1\n  - talk_to_physio_general"
+    },
+    {
+      "id": 19,
+      "sender": "talk_to_physio_general",
+      "type": "TOOL",
+      "raw_type": "ToolMessage",
+      "content": "Tool: talk_to_physio_general\nResult:\nMessage sent to General Physiotherapist: Hello, I am reviewing the case of a 6-year-old female patient with Cerebral Palsy, GMFCS level III. My analysis indicates her primary limitations are impaired motor control, significant balance deficits, and underlying sensory/proprioceptive impairments. She has previously shown good response to robotic gait training.\n\nI have evaluated the available Discover2Walk plans and have narrowed the options down to Plan 2 and Plan 3.\n\n- **Plan 3** offers a comprehensive, functional approach focusing on progressive reduction of assistance, strengthening key muscle groups, and improving functional metrics like the 10MWT and GMFM-88, which aligns well with her previous therapy and goals.\n- **Plan 2** is more specialized, targeting her sensory-motor integration deficits directly through multisensory feedback and perturbation training, which could be highly effective for her balance issues.\n\nGiven the patient's profile, which of these two plans would you recommend as the most effective primary strategy for her rehabilitation?"
+    },
+    {
+      "id": 20,
+      "sender": "General Physiotherapist",
+      "type": "AGENT",
+      "raw_type": "AIMessage",
+      "content": "AI Message:\nHello. To provide you with the most informed recommendation, I need to gather more details about the patient and the specifics of the Discover2Walk plans. I will start by retrieving the patient's clinical data.\n\nTool Calls: 1\n  - patient_retriever_tool"
+    },
+    {
+      "id": 21,
+      "sender": "patient_retriever_tool",
+      "type": "TOOL",
+      "raw_type": "ToolMessage",
+      "content": "Tool: patient_retriever_tool\nResult:\nDocument 1:\nCORTEX System Medical Report\nMEDICAL REPORT\nPatient: Patient Test\n1. General Information\n• Name: Patient Test\n• Age: 6 years\n• Sex: Female\n• Primary Diagnosis: Cerebral Palsy GMFCS III\n• Height: 104 cm\n• Weight: 15 kg\n2. Reason for Consultation\nImpaired gait and balance due to cerebral palsy.\n3. History of Present Illness\nThe patient has cerebral palsy classified at GMFCS level III. He is able to walk with\nassistance but presents significant gait disturbances and balance issues. She uses a manual\nwheelchair and walker.\nPresents moderate spasticity (Global pattern of 1 according to MAS)\n4. Past Medical History\nCerebral palsy. No specific comorbidities or prior interventions reported.\n5. Medications\nBotulinum toxin every 6 months.\n6. Family History\nNot relevant\n1\n\nDocument 2:\nCORTEX System Medical Report\n7. Social History\nNot relevant\n8. Physical Examination\nThe patient is able to walk with an assistive device. Initial assessment showed reduced\ntrunk control and balance.\n9. Diagnostic Tests\nThe evaluation included the Trunk Control Measurement Scale (TCMS), 10-meter Walk\nTest (10MWT), and the Gross Motor Function Measure-88 (GMFM-88).\nPost-therapy improvements were as follows:\n• TCMS: from 24 to 27\n• 10MWT: from 0.46 m/s to 0.59 m/s\n• GMFM-88 Dimension D: from 57.7% to 59.7%\n10. Clinical Impression\nThe patient demonstrated improvements in dynamic sitting balance and walking speed\nfollowing previous robotic gait training with the exoskeleton ATLAS 2030.\n11. Previous Treatment Plan\nA total of 10 gait training sessions were conducted using the ATLAS2030 pediatric robotic\nexoskeleton. The sessions included over-ground walking and turning with patient-initiated\nsteps, trunk support, and minimal external assistance from therapists.\n12. Outcome of Previous Therapy\n\nDocument 3:\nexoskeleton. The sessions included over-ground walking and turning with patient-initiated\nsteps, trunk support, and minimal external assistance from therapists.\n12. Outcome of Previous Therapy\nThe patient showed improved walking speed and trunk balance. Mild gains were also\nobserved in functional walking activities according to the GMFM-88. Training was well\ntolerated with no adverse effects reported.\n2"
+    },
+    {
+      "id": 22,
+      "sender": "Diagnosis Doctor",
+      "type": "AGENT",
+      "raw_type": "AIMessage",
+      "content": "AI Message:\n\n\nTool Calls: 1\n  - general_physio_retriever_tool"
+    },
+    {
+      "id": 23,
+      "sender": "general_physio_retriever_tool",
+      "type": "TOOL",
+      "raw_type": "ToolMessage",
+      "content": "Tool: general_physio_retriever_tool\nResult:\nDocument 1:\nof impairment remediation combined with functional balance\ntraining should be explored to improve sitting in children\ndiagnosed with CP.\nYardimci-Lokmanoglu et al. (\n63) conducted a SR including\nthree small RCTs, with spastic CP subjects aged 5–15 years, at\nGMFCS levels I–III. Diﬀerent approaches to proprioception (i.e.,\nwhole body vibration or integrated intensive proprioceptive and\nvisuomotor training) combined with conventional physical therapy\n(CPT), showed no superiority in motor performance, compared to\nCPT alone.\n/three.tnum./two.tnum./eight.tnum. Treadmill and mechanically assisted walking\nThe Australian CPG (\n13) described treadmill training among\nrecommended treatments, with or without partial body-weight\nsupport. The authors reported low-quality evidence to support\ntreadmill training to improve weight-bearing and improve\nfunctional walking, although the practice of overground walking,\nrather than treadmill training might be more eﬀective.\n\nDocument 2:\nstudy, involving subjects aged 4–12 years, and compared VR\n+ biofeedback vs. VR alone: the combination conferred better\nbalance than VR alone. The authors also reviewed one RCT and\nﬁve observational studies, involving subjects aged 5–18 years, at\nGMFCS levels I–III. Wii Fit appeared to confer improved balance.\nAraujo et al. (\n62) analyzed just one RCT, in spastic hemiplegic\nCP , with a mean age of 9.6 years (SD 2.6), at GMFCS I–II. Wii\ntherapy and NDT, compared to NDT, improved balance in terms\nof PBS in the short term (12 weeks).\n/three.tnum./two.tnum./one.tnum/one.tnum. Hydrotherapy\nThe Australian CPG (\n13) claimed for further research on\nhydrotherapy, nonetheless, outlined some positive aspects of\nthis approach: the warmth and buoyancy of the water might\nprovide support and pain relief, by assisting relaxation and\nreducing spasms; walking might be possible without aides; and\nﬁtness and endurance might be more easily challenged in a\n\nDocument 3:\nordination deficits, and impaired voluntary movement control. These impairments can\nsignificantly impact functional activities and restrict participation in essential aspects of\ndaily life, such as family interactions, education, social activities, and community engage-\nment [5–7].\nChildren and adolescents with CP commonly experience limitations in independent\nmobility, primarily due to deficits in gross motor function, gait, and balance. These mobility\nchallenges significantly affect their ability to explore the environment, engage in play, and\nperform different activities of daily living. Consequently, restricted mobility and participa-\ntion may lead to secondary complications, including muscle contractures, joint deformities,\nand reduced cardiovascular fitness, which further exacerbate functional limitations [7–9].\nGiven these challenges, physiotherapy (PT) interventions play a crucial role in manag-\n\nDocument 4:\nreview. Disabil Rehabil. (2019) 41:1131–51. doi: 10.1080/09638288.2017.1422035\n60. Ryan JM, Cassidy EE, Noorduyn SG, O’Connell NE. Exercise\ninterventions for cerebral palsy. Cochrane Database Syst Rev. (2017)\n6:CD011660. doi: 10.1002/14651858.CD011660.pub2\n61. Elnahhas AM, Elshennawy S, Aly MG. Eﬀects of backward gait tra ining on\nbalance, gross motor function, and gait in children with cereb ral palsy: a systematic\nreview. Clin Rehabil. (2019) 33:3–12. doi: 10.1177/0269215518790053\n62. Araújo PA, Starling JMP , Oliveira VC, Gontijo APB, Mancini M C. Combining\nbalance-training interventions with other active interven tions may enhance eﬀects on\npostural control in children and adolescents with cerebral palsy : a systematic review\nand meta-analysis. Braz J Phys Ther. (2020) 24:295–305. doi: 10.1016/j.bjpt.2019.04.005\n63. Yardimci-Lokmanoglu BN, Bingöl H, Mutlu A. The forgotten s ixth sense in\ncerebral palsy: do we have enough evidence for proprioceptive tre atment? Disabil\n\nDocument 5:\nAcademic Editor: Umberto Aguglia\nReceived: 13 February 2025\nRevised: 16 March 2025\nAccepted: 18 March 2025\nPublished: 24 March 2025\nCitation: Pacheco-da-Costa, S.;\nRodríguez-Costa, I.; Abuín-Porras, V .;\nAsúnsolo-del-Barco, Á.; Calvo-\nFuente, V .; Soto-Vidal, C. Effectiveness\nof Physiotherapy for Improving\nParticipation, Gross Motor Function,\nGait and Balance in Children and\nAdolescents with Cerebral Palsy:\nStudy Protocol for a Randomized\nControlled Trial.J. Clin. Med.2025, 14,\n2214. https://doi.org/10.3390/\njcm14072214\nCopyright: © 2025 by the authors.\nLicensee MDPI, Basel, Switzerland.\nThis article is an open access article\ndistributed under the terms and\nconditions of the Creative Commons\nAttribution (CC BY) license\n(https://creativecommons.org/\nlicenses/by/4.0/).\nArticle\nEffectiveness of Physiotherapy for Improving Participation,\nGross Motor Function, Gait and Balance in Children and\nAdolescents with Cerebral Palsy: Study Protocol for a\nRandomized Controlled Trial"
+    },
+    {
+      "id": 24,
+      "sender": "Chief of Rehabilitation",
+      "type": "AGENT",
+      "raw_type": "AIMessage",
+      "content": "AI Message:\nBased on the comprehensive information provided, both Plan 2 and Plan 3 are excellent options that address the patient's needs. However, I recommend **Plan 2** as the most effective primary strategy for her rehabilitation at this time.\n\nHere is my reasoning for this recommendation:\n\n1.  **Targeting the Root Cause:** The patient's primary limitations are identified as \"significant balance deficits\" and \"underlying sensory/proprioceptive impairments.\" Plan 2 is specifically designed to target these core issues through multisensory feedback and perturbation training. By addressing the foundational sensory-motor integration deficits, we can expect more substantial and lasting improvements in her motor control and stability. A purely functional approach, while beneficial, may not as effectively remediate these specific underlying impairments.\n\n2.  **Building a Foundation for Functional Gains:** While Plan 3 focuses on improving functional metrics like the 10MWT and GMFM-88, the patient's progress in these areas will ultimately be limited by her balance and sensory processing abilities. By prioritizing Plan 2, we are building a stronger foundation. Improved sensory-motor integration and reactive balance will directly translate to a higher quality of movement, greater stability, and increased confidence, which will subsequently enhance the effectiveness of any future functional training.\n\n3.  **Complementing Previous Therapy:** The patient has already demonstrated a positive response to functional robotic gait training. This indicates that she has the capacity to improve her strength and walking pattern. Now, shifting the focus to the sensory and balance components that are still significantly impaired is a logical and progressive next step in her rehabilitation journey. It addresses the aspects that her previous therapy may not have targeted as intensively.\n\nIn summary, while Plan 3 offers a proven path for functional improvement, **Plan 2 presents a strategic opportunity to address the fundamental deficits that are likely hindering her overall progress.** By focusing on sensory-motor integration and balance, we can unlock a higher potential for long-term functional independence and mobility for this patient."
+    },
+    {
+      "id": 25,
+      "sender": "General Physiotherapist",
+      "type": "AGENT",
+      "raw_type": "AIMessage",
+      "content": "AI Message:\n```json\n{\n  \"selected_plan\": 2,\n  \"justification\": \"The patient's primary limitations are significant balance deficits and underlying sensory/proprioceptive impairments. Plan 2 directly targets these core issues through its focus on multisensory feedback and perturbation training. By addressing these foundational sensory-motor integration deficits, we can build a stronger base for improving motor control and stability, which is a more strategic approach than focusing solely on functional metrics at this stage. This plan complements her previous successful therapy by shifting focus to the sensory and balance components that remain significantly impaired, representing a logical and progressive next step in her rehabilitation to unlock greater long-term functional potential.\"\n}\n```"
+    },
+    {
+      "id": 26,
+      "sender": "Diagnosis Doctor",
+      "type": "AGENT",
+      "raw_type": "AIMessage",
+      "content": "AI Message:\nOkay, Chief. Thank you so much for explaining this plan to me in detail. I really appreciate you taking the time. After reviewing everything, I feel incredibly reassured.\n\nIt makes perfect sense to me that we're focusing on [Child's Name]'s balance and sensory awareness first. I've definitely noticed how much difficulty she has with those things. The justification you provided, about building a stronger base before focusing solely on functional metrics, resonates deeply with me. It's like building a house – you need a solid foundation first!\n\nI’m especially excited about the multisensory gait loop. The auditory cues, visual distractions, and varying ground textures sound like a fun and engaging way to challenge [Child's Name] and help her learn to adapt to different environments. I think that's brilliant.\n\nThe perturbation training also sounds promising, though I admit I'm a little nervous about the \"sudden short directional pulls at the hips.\" But I trust your judgment and I understand that it's all about helping her develop those adaptive responses. I'm glad to see that the intensity will be adjusted based on her tolerance. That gives me peace of mind.\n\nThe warm-up and cool-down phases seem well-structured and appropriate. I like the idea of using the Discover2Walk for passive joint mobilizations during the warm-up. And the post-session review with [Child's Name] and me sounds like a great way to keep us informed and involved in her progress.\n\nHonestly, I feel like we've made the right decision choosing this path with you and the team. I have complete faith in your expertise and your commitment to [Child's Name]'s well-being. You've always been so attentive to her needs and progress.\n\nMy only real question, and it's a minor one, is how will you gauge [Child's Name]'s tolerance during the perturbation training? Will you be looking for specific signs of discomfort or fatigue? I just want to be sure we're communicating effectively about that.\n\nBut overall, I'm very happy with this proposed therapy plan. Thank you again for everything. We're ready to get started!"
+    },
+    {
+      "id": 27,
+      "sender": "Chief of Rehabilitation",
+      "type": "AGENT",
+      "raw_type": "AIMessage",
+      "content": "AI Message:\nOf course, I'm happy to clarify. Gauging your daughter's tolerance during perturbation training is a critical part of ensuring the sessions are both effective and positive. We use a combination of objective data from the exoskeleton and, most importantly, direct observation and communication.\n\nHere’s what my team and I will be looking for:\n\n1.  **Physical Responses:** We watch for any signs of excessive effort, such as breath-holding, significant changes in posture (like leaning heavily on the device), or sudden muscle tensing. The goal is to challenge her balance system, not to overwhelm her.\n2.  **Verbal and Non-Verbal Cues:** We maintain a constant dialogue with your daughter. We'll ask her how she's feeling and encourage her to use a simple scale (like \"thumbs up, thumbs sideways, or thumbs down\") to tell us if a challenge feels okay, a little hard, or too much. We also pay close attention to her facial expressions and overall engagement. If she starts to look anxious, frustrated, or overly tired, we immediately reduce the intensity.\n3.  **Performance Data:** The Discover2Walk exoskeleton provides real-time data on how much she is resisting the pull versus actively correcting her posture. If the data shows she is struggling to recover her balance, we know to ease off.\n\nThe process is very dynamic. We will start with extremely gentle and predictable perturbations and only increase the intensity as she demonstrates confidence and success. Your feedback as a parent is also invaluable. You know your daughter better than anyone, so if you ever feel a particular exercise is too much for her, we will listen and adjust immediately.\n\nThank you for your trust. We are excited to begin and are confident that this focused approach will yield excellent results. We will keep you informed every step of the way."
+    },
+    {
+      "id": 28,
+      "sender": "Human (User)",
+      "type": "HUMAN",
+      "raw_type": "HumanMessage",
+      "content": "Human Message:\nYou are analyzing gait sensor feedback from the D2W exoskeleton therapy session that just concluded.\n\n**Sensor Data #1:**\n- Sensor: Left Ankle Position Tracker\n- View: XZ Plane (Sagittal)\n- Data Type: Average trajectory of last 5 gait cycles vs reference. As the info you see is the average from the last 5 gait cycles, ignore small variations and focus on overall trends.\n- Image: mean_group_001-005_xz.png\n\nYour analysis should focus on:\nAnalyze the data provided by the sensors. Identify whether there are any unusual measurements. This does not mean that the paceiten's performance is not ideal (since that is expected and controlled by another agent), but rather that there is an error in the measurement due to problems with the sensors, the robot, etc.\n\nProvide your assessment in the structured JSON format you've been trained to use for sensor feedback analysis."
+    },
+    {
+      "id": 29,
+      "sender": "General Physiotherapist",
+      "type": "AGENT",
+      "raw_type": "AIMessage",
+      "content": "AI Message:\nSensor Feedback Analysis Result:\n\n**Status:** ISSUE_DETECTED\n**Health Risk:** LOW\n**Issue Origin:** SENSOR\n\n**Description:** The 'Real Pose' trajectory exhibits significant high-frequency noise or jitter throughout the entire gait cycle. This pattern is not typical of physiological human movement, which is generally smoother, and it persists even after averaging five cycles.\n\n**Recommendations:** The noise may indicate a sensor malfunction, loose connection, or electromagnetic interference. Check the physical connection and wiring of the L_Ankle_Pose_XZ_1 sensor. If the connection is secure, consider recalibrating the sensor. If the issue persists, the sensor may need to be replaced."
+    },
+    {
+      "id": 30,
+      "sender": "Human (User)",
+      "type": "HUMAN",
+      "raw_type": "HumanMessage",
+      "content": "Human Message:\nYou are analyzing gait sensor feedback from the D2W exoskeleton therapy session that just concluded.\n\n**Sensor Data #2:**\n- Sensor: Left Ankle Position Tracker\n- View: XZ Plane (Sagittal)\n- Data Type: Average trajectory of last 5 gait cycles vs reference. As the info you see is the average from the last 5 gait cycles, ignore small variations and focus on overall trends.\n- Image: mean_group_006-010_xz.png\n\nYour analysis should focus on:\nAnalyze the data provided by the sensors. Identify whether there are any unusual measurements. This does not mean that the paceiten's performance is not ideal (since that is expected and controlled by another agent), but rather that there is an error in the measurement due to problems with the sensors, the robot, etc.\n\nProvide your assessment in the structured JSON format you've been trained to use for sensor feedback analysis."
+    },
+    {
+      "id": 31,
+      "sender": "Diagnosis Doctor",
+      "type": "AGENT",
+      "raw_type": "AIMessage",
+      "content": "AI Message:\nSensor Feedback Analysis Result:\n\n**Status:** ISSUE_DETECTED\n**Health Risk:** LOW\n**Issue Origin:** MEASUREMENT\n\n**Description:** The 'Real Pose' trajectory exhibits persistent, high-frequency oscillations (jitter) throughout the entire gait cycle. This suggests the presence of electronic noise in the signal, which is also acknowledged by the 'Medium Noise' label in the graph's title.\n\n**Recommendations:** The session can continue, but the data quality for this sensor is compromised. For post-session analysis, apply a low-pass filter to the data to get a clearer representation of the trajectory. A technician should check the sensor's wiring for interference or loose connections and review the data acquisition system's filtering settings before the next session."
+    },
+    {
+      "id": 32,
+      "sender": "Human (User)",
+      "type": "HUMAN",
+      "raw_type": "HumanMessage",
+      "content": "Human Message:\nYou are analyzing gait sensor feedback from the D2W exoskeleton therapy session that just concluded.\n\n**Sensor Data #3:**\n- Sensor: Left Ankle Position Tracker\n- View: XZ Plane (Sagittal)\n- Data Type: Average trajectory of last 5 gait cycles vs reference. As the info you see is the average from the last 5 gait cycles, ignore small variations and focus on overall trends.\n- Image: mean_group_011-015_xz.png\n\nYour analysis should focus on:\nAnalyze the data provided by the sensors. Identify whether there are any unusual measurements. This does not mean that the paceiten's performance is not ideal (since that is expected and controlled by another agent), but rather that there is an error in the measurement due to problems with the sensors, the robot, etc.\n\nProvide your assessment in the structured JSON format you've been trained to use for sensor feedback analysis."
+    },
+    {
+      "id": 33,
+      "sender": "Chief of Rehabilitation",
+      "type": "AGENT",
+      "raw_type": "AIMessage",
+      "content": "AI Message:\nSensor Feedback Analysis Result:\n\n**Status:** ISSUE_DETECTED\n**Health Risk:** LOW\n**Issue Origin:** SENSOR\n\n**Description:** The measured 'Real Pose' trajectory shows a significant level of high-frequency noise or jitter throughout the entire gait cycle, resulting in a jagged line instead of a smooth curve.\n\n**Recommendations:** The noise may affect the quality of the data and potentially the control system's performance. Check the physical connection and integrity of the L_Ankle_Pose_XZ_3 sensor and its wiring. If the issue persists, consider recalibrating or replacing the sensor. Investigate potential sources of electromagnetic interference."
+    },
+    {
+      "id": 34,
+      "sender": "Human (User)",
+      "type": "HUMAN",
+      "raw_type": "HumanMessage",
+      "content": "Human Message:\nYou are analyzing gait sensor feedback from the D2W exoskeleton therapy session that just concluded.\n\n**Sensor Data #4:**\n- Sensor: Left Ankle Position Tracker\n- View: XZ Plane (Sagittal)\n- Data Type: Average trajectory of last 5 gait cycles vs reference. As the info you see is the average from the last 5 gait cycles, ignore small variations and focus on overall trends.\n- Image: mean_group_016-020_xz.png\n\nYour analysis should focus on:\nAnalyze the data provided by the sensors. Identify whether there are any unusual measurements. This does not mean that the paceiten's performance is not ideal (since that is expected and controlled by another agent), but rather that there is an error in the measurement due to problems with the sensors, the robot, etc.\n\nProvide your assessment in the structured JSON format you've been trained to use for sensor feedback analysis."
+    },
+    {
+      "id": 35,
+      "sender": "General Physiotherapist",
+      "type": "AGENT",
+      "raw_type": "AIMessage",
+      "content": "AI Message:\nSensor Feedback Analysis Result:\n\n**Status:** ISSUE_DETECTED\n**Health Risk:** LOW\n**Issue Origin:** MEASUREMENT\n\n**Description:** The real pose trajectory exhibits a significant level of high-frequency noise, making the signal appear jagged and unsmooth. This is explicitly mentioned in the graph's title as 'Medium Noise'.\n\n**Recommendations:** The noise could originate from the sensor itself, loose connections, or electromagnetic interference. Recommend checking the physical sensor connections and wiring. If the hardware is sound, applying a digital low-pass filter (e.g., Butterworth or Savitzky-Golay) to the data would provide a cleaner signal for both real-time control and post-session analysis."
+    },
+    {
+      "id": 36,
+      "sender": "Human (User)",
+      "type": "HUMAN",
+      "raw_type": "HumanMessage",
+      "content": "Human Message:\nYou are analyzing gait sensor feedback from the D2W exoskeleton therapy session that just concluded.\n\n**Sensor Data #5:**\n- Sensor: Left Ankle Position Tracker\n- View: XZ Plane (Sagittal)\n- Data Type: Average trajectory of last 5 gait cycles vs reference. As the info you see is the average from the last 5 gait cycles, ignore small variations and focus on overall trends.\n- Image: mean_group_021-025_xz.png\n\nYour analysis should focus on:\nAnalyze the data provided by the sensors. Identify whether there are any unusual measurements. This does not mean that the paceiten's performance is not ideal (since that is expected and controlled by another agent), but rather that there is an error in the measurement due to problems with the sensors, the robot, etc.\n\nProvide your assessment in the structured JSON format you've been trained to use for sensor feedback analysis."
+    },
+    {
+      "id": 37,
+      "sender": "Diagnosis Doctor",
+      "type": "AGENT",
+      "raw_type": "AIMessage",
+      "content": "AI Message:\nSensor Feedback Analysis Result:\n\n**Status:** ISSUE_DETECTED\n**Health Risk:** LOW\n**Issue Origin:** MEASUREMENT\n\n**Description:** The 'Real Pose' trajectory exhibits significant high-frequency noise, making the signal appear jagged and unsmooth. This level of jitter is not typical of physiological movement, even in pathological gait, and suggests a data quality problem.\n\n**Recommendations:** The noise may be obscuring the true movement pattern. It is recommended to apply a low-pass filter (e.g., Butterworth or moving average) to the raw position data to get a clearer signal. Additionally, check sensor connections and shielding for potential sources of electrical interference."
+    },
+    {
+      "id": 38,
+      "sender": "Human (User)",
+      "type": "HUMAN",
+      "raw_type": "HumanMessage",
+      "content": "Human Message:\nYou are analyzing gait sensor feedback from the D2W exoskeleton therapy session that just concluded.\n\n**Sensor Data #6:**\n- Sensor: Left Ankle Position Tracker\n- View: XZ Plane (Sagittal)\n- Data Type: Average trajectory of last 5 gait cycles vs reference. As the info you see is the average from the last 5 gait cycles, ignore small variations and focus on overall trends.\n- Image: mean_group_026-030_xz.png\n\nYour analysis should focus on:\nAnalyze the data provided by the sensors. Identify whether there are any unusual measurements. This does not mean that the paceiten's performance is not ideal (since that is expected and controlled by another agent), but rather that there is an error in the measurement due to problems with the sensors, the robot, etc.\n\nProvide your assessment in the structured JSON format you've been trained to use for sensor feedback analysis."
+    },
+    {
+      "id": 39,
+      "sender": "Chief of Rehabilitation",
+      "type": "AGENT",
+      "raw_type": "AIMessage",
+      "content": "AI Message:\nSensor Feedback Analysis Result:\n\n**Status:** ISSUE_DETECTED\n**Health Risk:** LOW\n**Issue Origin:** SENSOR\n\n**Description:** The real pose trajectory data exhibits significant high-frequency noise or jitter throughout the entire gait cycle. This is visible as a consistently jagged line compared to the smooth reference trajectory and is also noted in the graph's title as 'Medium Noise'.\n\n**Recommendations:** The noise appears to be a measurement artifact. It is recommended to inspect the L_Ankle_Pose_XZ_6 sensor and its physical connections for integrity. Check for sources of electromagnetic interference. Consider applying a digital low-pass filter to the sensor data to provide a cleaner signal for the control system and for future analysis. If the problem persists, the sensor may require recalibration or replacement."
+    },
+    {
+      "id": 40,
+      "sender": "General Physiotherapist",
+      "type": "AGENT",
+      "raw_type": "AIMessage",
+      "content": "AI Message:\n\n\nTool Calls: 1\n  - talk_to_physio_general"
+    },
+    {
+      "id": 41,
+      "sender": "talk_to_physio_general",
+      "type": "TOOL",
+      "raw_type": "ToolMessage",
+      "content": "Tool: talk_to_physio_general\nResult:\nMessage sent to General Physiotherapist: I've reviewed the initial observations. Your report of 'persistent high-frequency noise or jitter' in the left ankle position sensor is the most significant finding. Could you please elaborate on this? Specifically, how did this sensor noise manifest in the exoskeleton's behavior, and did it pose any observable risk to the patient's safety or gait pattern during the therapy session?"
+    },
+    {
+      "id": 42,
+      "sender": "Human (User)",
+      "type": "HUMAN",
+      "raw_type": "HumanMessage",
+      "content": "Human Message:\n**Request from Doctor:**\nI've reviewed the initial observations. Your report of 'persistent high-frequency noise or jitter' in the left ankle position sensor is the most significant finding. Could you please elaborate on this? Specifically, how did this sensor noise manifest in the exoskeleton's behavior, and did it pose any observable risk to the patient's safety or gait pattern during the therapy session?"
+    },
+    {
+      "id": 43,
+      "sender": "Diagnosis Doctor",
+      "type": "AGENT",
+      "raw_type": "AIMessage",
+      "content": "AI Message:\nDoctor, thank you for the follow-up. My analysis was based on post-session sensor data logs, so I did not directly observe the exoskeleton's real-time behavior or its effect on the patient.\n\nBased on my expertise and the data provided, the persistent high-frequency noise in the left ankle sensor would likely manifest in the following ways:\n\n1.  **Exoskeleton Behavior:** The control system would interpret the noisy signal as the patient's actual position, causing it to make constant, tiny, and erratic micro-corrections. This could have resulted in a subtle but persistent vibration or juddering in the left ankle module of the exoskeleton. The patient may have felt this as unsteadiness or a 'buzzing' sensation.\n\n2.  **Risk to Patient's Gait and Safety:** The primary risk is not of immediate, catastrophic failure but of degraded therapeutic quality and potential long-term negative effects. The goal of the therapy is to train a smooth, physiological gait pattern. By introducing erratic, non-physiological movements, the noisy sensor actively works against this goal. It could confuse the patient's proprioceptive feedback system and hinder motor learning. While the immediate physical risk is low, these unintended movements could lead to increased muscle fatigue or patient discomfort.\n\nTo get a more direct account of the session, I am consulting with the Chief of Rehabilitation to determine if any unusual movements or patient complaints were noted in real-time.\n\nTool Calls: 1\n  - talk_to_chief"
+    },
+    {
+      "id": 44,
+      "sender": "Chief of Rehabilitation",
+      "type": "AGENT",
+      "raw_type": "AIMessage",
+      "content": "AI Message:\n```json\n{\n  \"hazard_vector\": \"Equipment Malfunction and Incomplete Real-Time Reporting\",\n  \"location\": [\n    0,\n    0,\n    1,\n    1,\n    0,\n    0,\n    0\n  ],\n  \"justification\": \"The hazard originates from two primary sources. First, the Discover2Walk Exoskeleton (x4) is the direct physical origin due to a faulty ankle position sensor, which introduced erratic data and compromised the system's intended therapeutic function. Second, the General Physiotherapist (x3) is identified as a contributing location due to a procedural gap. While the physiotherapist correctly identified the sensor noise in post-session data logs, the failure to observe and report the physical manifestation of this issue (e.g., jitter, vibration, or altered gait) during the live session allowed the hazard to persist without immediate intervention. This represents a failure in real-time clinical monitoring, which is critical for patient safety and therapeutic efficacy.\"\n}\n```"
+    },
+    {
+      "id": 45,
+      "sender": "General Physiotherapist",
+      "type": "AGENT",
+      "raw_type": "AIMessage",
+      "content": "AI Message:\n\n\nTool Calls: 1\n  - talk_to_physio_general"
+    },
+    {
+      "id": 46,
+      "sender": "talk_to_physio_general",
+      "type": "TOOL",
+      "raw_type": "ToolMessage",
+      "content": "Tool: talk_to_physio_general\nResult:\nMessage sent to General Physiotherapist: I've reviewed the initial observations. Your report of 'persistent high-frequency noise or jitter' in the left ankle position sensor is a significant concern. Could you please provide more details? Specifically, did this sensor noise translate into any observable, erratic movements by the exoskeleton, or did it seem to negatively affect the patient's gait or safety during the therapy session?"
+    },
+    {
+      "id": 47,
+      "sender": "Diagnosis Doctor",
+      "type": "AGENT",
+      "raw_type": "AIMessage",
+      "content": "AI Message:\n```json\n{\n  \"hazard_vector\": \"Equipment Malfunction - Sensor Data Integrity Failure\",\n  \"location\": [\n    0,\n    0,\n    0,\n    1,\n    0,\n    0,\n    0\n  ],\n  \"justification\": \"The hazard originates directly and exclusively from the Discover2Walk Exoskeleton. The report of 'persistent high-frequency noise or jitter' in the left ankle position sensor points to a technical failure within the device itself. This is a hardware or firmware issue, not a clinical or human error. The clinical team (Diagnosis Doctor, Chief of Rehabilitation, General Physiotherapist) acted appropriately within their roles; in fact, the physiotherapist correctly identified and reported the potential hazard. The patient, guardian, and communication channels are not the source of the equipment's sensor malfunction. Therefore, the origin of this hazard is localized entirely to the exoskeleton (x4).\"\n}\n```"
+    },
+    {
+      "id": 48,
+      "sender": "Chief of Rehabilitation",
+      "type": "AGENT",
+      "raw_type": "AIMessage",
+      "content": "AI Message:\n\n\nTool Calls: 1\n  - talk_to_chief"
+    },
+    {
+      "id": 49,
+      "sender": "talk_to_chief",
+      "type": "TOOL",
+      "raw_type": "ToolMessage",
+      "content": "Tool: talk_to_chief\nResult:\nMessage sent to Chief of Rehabilitation: Chief, I'm analyzing the incident as part of the POIROT protocol. My individual analysis identified persistent high-frequency noise in the left ankle position sensor data throughout the entire session. You reported 'no unusual observations.' To ensure a thorough investigation, could you please confirm if there were any subtle signs that might be related to this sensor issue? For instance, did you notice any minor vibrations or unusual sounds from the exoskeleton's left ankle, or did the patient make any comments about feeling a 'buzzing,' 'tingling,' or instability specifically in that leg?"
+    },
+    {
+      "id": 50,
+      "sender": "Human (User)",
+      "type": "HUMAN",
+      "raw_type": "HumanMessage",
+      "content": "Human Message:\n**Request from Physio General:**\nChief, I'm analyzing the incident as part of the POIROT protocol. My individual analysis identified persistent high-frequency noise in the left ankle position sensor data throughout the entire session. You reported 'no unusual observations.' To ensure a thorough investigation, could you please confirm if there were any subtle signs that might be related to this sensor issue? For instance, did you notice any minor vibrations or unusual sounds from the exoskeleton's left ankle, or did the patient make any comments about feeling a 'buzzing,' 'tingling,' or instability specifically in that leg?"
+    },
+    {
+      "id": 51,
+      "sender": "General Physiotherapist",
+      "type": "AGENT",
+      "raw_type": "AIMessage",
+      "content": "AI Message:\n```json\n{\n  \"hazard_vector\": \"Equipment Malfunction - Sensor Data Integrity Failure\",\n  \"location\": [\n    0,\n    0,\n    0,\n    1,\n    0,\n    0,\n    0\n  ],\n  \"justification\": \"Based on the consultation with the General Physiotherapist, the root cause of the incident is the 'persistent high-frequency noise or jitter' originating from the Discover2Walk exoskeleton's left ankle position sensor. This is unequivocally a hardware or firmware malfunction. My role, and that of the other clinical agents, was performed correctly; the therapy plan was appropriate, and the physiotherapist properly identified and reported the anomaly. The issue did not stem from the patient's condition or any external communication failure. The hazard originates exclusively from a faulty component within the exoskeleton itself, compromising the integrity of the data essential for safe operation.\"\n}\n```"
+    },
+    {
+      "id": 52,
+      "sender": "Diagnosis Doctor",
+      "type": "AGENT",
+      "raw_type": "AIMessage",
+      "content": "AI Message:\n```json\n{\n  \"hazard_vector\": \"Equipment Malfunction - Sensor Data Integrity Failure\",\n  \"location\": [\n    0,\n    0,\n    0,\n    1,\n    0,\n    0,\n    0\n  ],\n  \"justification\": \"My analysis of the sensor data logs consistently identified a 'persistent high-frequency noise or jitter' in the left ankle position sensor. This is an anomalous measurement originating from the hardware itself, indicating a sensor malfunction, a loose connection, or electromagnetic interference. This issue is intrinsic to the Discover2Walk Exoskeleton. The other agents, including myself, the Chief of Rehabilitation, and the Diagnosis Doctor, performed our roles correctly based on the information available. The patient's condition did not cause this hardware issue. Therefore, the origin of the hazard is located exclusively within the Discover2Walk Exoskeleton.\"\n}\n```"
+    }
+  ],
+  "voting_data": {
+    "voting_summary": {
+      "total_voters": 3,
+      "total_weighted_votes": 2.2208,
+      "similarity_metric": "hamming_normalized_inverted",
+      "weight_range": [
+        0.5,
+        1.0
+      ],
+      "is_tie": false,
+      "tied_count": 1
+    },
+    "winning_location": {
+      "vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "name": "Discover2Walk Exoskeleton",
+      "total_score": 1.5815,
+      "percentage": 71.21,
+      "dimension_index": 3
+    },
+    "tied_locations": null,
+    "agent_votes": [
+      {
+        "agent_name": "Diagnosis Doctor",
+        "agent_position": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "voted_location": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "hazard_vector": "Equipment Malfunction and Incomplete Real-Time Reporting",
+        "similarity_to_self": 0.5714,
+        "vote_weight": 0.6393,
+        "p_success": 0.7072,
+        "baseline": 0.3536
+      },
+      {
+        "agent_name": "Chief of Rehabilitation",
+        "agent_position": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "voted_location": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "hazard_vector": "Equipment Malfunction - Sensor Data Integrity Failure",
+        "similarity_to_self": 0.7143,
+        "vote_weight": 0.4682,
+        "p_success": 0.2221,
+        "baseline": 0.111
+      },
+      {
+        "agent_name": "General Physiotherapist",
+        "agent_position": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "voted_location": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "hazard_vector": "Equipment Malfunction - Sensor Data Integrity Failure",
+        "similarity_to_self": 0.7143,
+        "vote_weight": 0.474,
+        "p_success": 0.2337,
+        "baseline": 0.1168
+      }
+    ],
+    "dimension_scores": [
+      0.0,
+      0.0,
+      0.6393,
+      1.5815,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "dimension_rankings": [
+      {
+        "dimension_index": 3,
+        "name": "Discover2Walk Exoskeleton",
+        "score": 1.5815,
+        "rank": 1,
+        "percentage": 71.21
+      },
+      {
+        "dimension_index": 2,
+        "name": "General Physiotherapist",
+        "score": 0.6393,
+        "rank": 2,
+        "percentage": 28.79
+      },
+      {
+        "dimension_index": 0,
+        "name": "Diagnosis Doctor",
+        "score": 0.0,
+        "rank": 3,
+        "percentage": 0.0
+      },
+      {
+        "dimension_index": 1,
+        "name": "Chief of Rehabilitation",
+        "score": 0.0,
+        "rank": 4,
+        "percentage": 0.0
+      },
+      {
+        "dimension_index": 4,
+        "name": "Patient",
+        "score": 0.0,
+        "rank": 5,
+        "percentage": 0.0
+      },
+      {
+        "dimension_index": 5,
+        "name": "Parent/Guardian",
+        "score": 0.0,
+        "rank": 6,
+        "percentage": 0.0
+      },
+      {
+        "dimension_index": 6,
+        "name": "System Communication Channels",
+        "score": 0.0,
+        "rank": 7,
+        "percentage": 0.0
+      }
+    ],
+    "location_scores": {
+      "[1, 0, 0, 0, 0, 0, 0]": {
+        "name": "Diagnosis Doctor",
+        "vector": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.0,
+        "percentage": 0.0,
+        "votes_received": [],
+        "is_multi_component": false
+      },
+      "[0, 1, 0, 0, 0, 0, 0]": {
+        "name": "Chief of Rehabilitation",
+        "vector": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.0,
+        "percentage": 0.0,
+        "votes_received": [],
+        "is_multi_component": false
+      },
+      "[0, 0, 1, 0, 0, 0, 0]": {
+        "name": "General Physiotherapist",
+        "vector": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.0,
+        "percentage": 0.0,
+        "votes_received": [],
+        "is_multi_component": false
+      },
+      "[0, 0, 0, 1, 0, 0, 0]": {
+        "name": "Discover2Walk Exoskeleton",
+        "vector": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.9422,
+        "percentage": 42.43,
+        "votes_received": [
+          "Chief of Rehabilitation",
+          "General Physiotherapist"
+        ],
+        "is_multi_component": false
+      },
+      "[0, 0, 0, 0, 1, 0, 0]": {
+        "name": "Patient",
+        "vector": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "total_score": 0.0,
+        "percentage": 0.0,
+        "votes_received": [],
+        "is_multi_component": false
+      },
+      "[0, 0, 0, 0, 0, 1, 0]": {
+        "name": "Parent/Guardian",
+        "vector": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "total_score": 0.0,
+        "percentage": 0.0,
+        "votes_received": [],
+        "is_multi_component": false
+      },
+      "[0, 0, 0, 0, 0, 0, 1]": {
+        "name": "System Communication Channels",
+        "vector": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "total_score": 0.0,
+        "percentage": 0.0,
+        "votes_received": [],
+        "is_multi_component": false
+      },
+      "[0, 0, 1, 1, 0, 0, 0]": {
+        "name": "General Physiotherapist + Discover2Walk Exoskeleton",
+        "vector": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.6393,
+        "percentage": 28.79,
+        "votes_received": [
+          "Diagnosis Doctor"
+        ],
+        "is_multi_component": true
+      }
+    },
+    "dimension_probabilities": {
+      "x1_Diagnosis_Doctor": {
+        "name": "Diagnosis Doctor",
+        "dimension_index": 0,
+        "total_weight": 0.0,
+        "probability": 0.0,
+        "percentage": "0.0%",
+        "description": "Responsible for initial patient analysis, medical tests, and the diagnostic report. Errors could arise from misdiagnosis, incorrect test selection, or flawed report generation.",
+        "type": "agent"
+      },
+      "x2_Chief_of_Rehabilitation": {
+        "name": "Chief of Rehabilitation",
+        "dimension_index": 1,
+        "total_weight": 0.0,
+        "probability": 0.0,
+        "percentage": "0.0%",
+        "description": "Selects the therapy plan, consults specialists, and communicates with guardians. Errors could stem from misinterpreting the diagnosis, poor plan selection from the available options, or ineffective communication.",
+        "type": "agent"
+      },
+      "x3_General_Physiotherapist": {
+        "name": "General Physiotherapist",
+        "dimension_index": 2,
+        "total_weight": 0.0,
+        "probability": 0.0,
+        "percentage": "0.0%",
+        "description": "Provides specialized consultation to the Chief of Rehabilitation. Errors could involve providing incorrect, incomplete, or misinterpreted advice.",
+        "type": "agent"
+      },
+      "x4_Discover2Walk_Exoskeleton": {
+        "name": "Discover2Walk Exoskeleton",
+        "dimension_index": 3,
+        "total_weight": 0.9422,
+        "probability": 0.5958,
+        "percentage": "59.58%",
+        "description": "The physical device that administers the therapy. Errors could be due to mechanical failure, sensor malfunction, or incorrect execution of the selected therapy plan.",
+        "type": "hardware"
+      },
+      "x5_Patient": {
+        "name": "Patient",
+        "dimension_index": 4,
+        "total_weight": 0.0,
+        "probability": 0.0,
+        "percentage": "0.0%",
+        "description": "The subject of the diagnosis and therapy. The initial data might be atypical, or the patient's condition could have un-diagnosed complexities, leading to unexpected outcomes.",
+        "type": "human"
+      },
+      "x6_Parent/Guardian": {
+        "name": "Parent/Guardian",
+        "dimension_index": 5,
+        "total_weight": 0.0,
+        "probability": 0.0,
+        "percentage": "0.0%",
+        "description": "Receives the therapy plan and explanation. Errors can arise from misunderstanding instructions, leading to non-compliance or incorrect feedback about the patient's progress.",
+        "type": "human"
+      },
+      "x7_System_Communication_Channels": {
+        "name": "System Communication Channels",
+        "dimension_index": 6,
+        "total_weight": 0.0,
+        "probability": 0.0,
+        "percentage": "0.0%",
+        "description": "The infrastructure for information flow between agents and hardware. Errors could include data corruption, message loss, or delays in communication between system components.",
+        "type": "other"
+      }
+    },
+    "ground_truth_comparison": {
+      "ground_truth_vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "predicted_vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "is_correct": true,
+      "injected_hazards": [
+        "Sensor-Broken"
+      ],
+      "true_positives": 1,
+      "false_positives": 0,
+      "false_negatives": 0,
+      "true_negatives": 6,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "total_errors_injected": 1,
+      "total_errors_detected": 1,
+      "dimension_scores": [
+        0.0,
+        0.0,
+        0.6393,
+        1.5815,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "top_predicted_indices": [
+        3
+      ],
+      "gt_error_indices": [
+        3
+      ]
+    }
+  },
+  "agent_votes": [
+    {
+      "agent_name": "Diagnosis Doctor",
+      "agent_position": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "voted_location": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "hazard_vector": "Equipment Malfunction and Incomplete Real-Time Reporting",
+      "similarity_to_self": 0.5714,
+      "vote_weight": 0.6393,
+      "p_success": 0.7072,
+      "baseline": 0.3536
+    },
+    {
+      "agent_name": "Chief of Rehabilitation",
+      "agent_position": [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "voted_location": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "hazard_vector": "Equipment Malfunction - Sensor Data Integrity Failure",
+      "similarity_to_self": 0.7143,
+      "vote_weight": 0.4682,
+      "p_success": 0.2221,
+      "baseline": 0.111
+    },
+    {
+      "agent_name": "General Physiotherapist",
+      "agent_position": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "voted_location": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "hazard_vector": "Equipment Malfunction - Sensor Data Integrity Failure",
+      "similarity_to_self": 0.7143,
+      "vote_weight": 0.474,
+      "p_success": 0.2337,
+      "baseline": 0.1168
+    }
+  ],
+  "individual_reports": [
+    {
+      "agent_name": "Chief of Rehabilitation",
+      "patient": "Patient1",
+      "session": 100,
+      "participated": "Yes",
+      "context_messages": 8,
+      "observations": [],
+      "source_file": "phase1_individual_report_chief.txt"
+    },
+    {
+      "agent_name": "Diagnosis Doctor",
+      "patient": "Patient1",
+      "session": 100,
+      "participated": "Yes",
+      "context_messages": 2,
+      "observations": [
+        {
+          "description": "I did not participate in the therapy selection or execution phase where the hazard event presumably occurred. My role was limited to the initial patient assessment and the creation of the diagnostic report and therapy recommendation.",
+          "evidence": "My last action was to provide the comprehensive analysis and rehabilitation plan based on the BRAIN framework. I have no information on the subsequent actions taken by the Chief of Rehabilitation, the General Physiotherapist, or the events during the actual therapy session."
+        }
+      ],
+      "source_file": "phase1_individual_report_doctor.txt"
+    },
+    {
+      "agent_name": "General Physiotherapist",
+      "patient": "Patient1",
+      "session": 100,
+      "participated": "Yes",
+      "context_messages": 14,
+      "observations": [
+        {
+          "description": "Persistent high-frequency noise or jitter was detected in the left ankle position sensor data throughout the entire therapy session.",
+          "evidence": "Across all six sensor data analyses provided (Sensor Data #1 through #6), my assessment consistently identified 'significant high-frequency noise or jitter' in the 'Real Pose' trajectory, which is atypical for physiological movement and indicative of a measurement or sensor issue."
+        }
+      ],
+      "source_file": "phase1_individual_report_physio_general.txt"
+    }
+  ],
+  "peer_consultations": [
+    {
+      "agent_name": "Chief of Rehabilitation",
+      "agent_key": "chief",
+      "session": 100,
+      "total_messages": 2,
+      "messages": [
+        {
+          "id": 1,
+          "sender": "Chief of Rehabilitation",
+          "sender_key": "chief",
+          "receiver": "Peers",
+          "receiver_key": "peers",
+          "type": "AGENT",
+          "raw_type": "AIMessage",
+          "content": "Tool Calls: 1\n  - talk_to_physio_general",
+          "is_system": false
+        },
+        {
+          "id": 2,
+          "sender": "Chief of Rehabilitation",
+          "sender_key": "chief",
+          "receiver": "POIROT System",
+          "receiver_key": "poirot",
+          "type": "AGENT",
+          "raw_type": "AIMessage",
+          "content": "```json\n{\n  \"hazard_vector\": \"Equipment Malfunction - Sensor Data Integrity Failure\",\n  \"location\": [\n    0,\n    0,\n    0,\n    1,\n    0,\n    0,\n    0\n  ],\n  \"justification\": \"The hazard originates directly and exclusively from the Discover2Walk Exoskeleton. The report of 'persistent high-frequency noise or jitter' in the left ankle position sensor points to a technical failure within the device itself. This is a hardware or firmware issue, not a clinical or human error. The clinical team (Diagnosis Doctor, Chief of Rehabilitation, General Physiotherapist) acted appropriately within their roles; in fact, the physiotherapist correctly identified and reported the potential hazard. The patient, guardian, and communication channels are not the source of the equipment's sensor malfunction. Therefore, the origin of this hazard is localized entirely to the exoskeleton (x4).\"\n}\n```",
+          "is_system": false
+        }
+      ],
+      "vote": {
+        "hazard_vector": "Equipment Malfunction - Sensor Data Integrity Failure",
+        "location": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "justification": "The hazard originates directly and exclusively from the Discover2Walk Exoskeleton. The report of 'persistent high-frequency noise or jitter' in the left ankle position sensor points to a technical failure within the device itself. This is a hardware or firmware issue, not a clinical or human error. The clinical team (Diagnosis Doctor, Chief of Rehabilitation, General Physiotherapist) acted appropriately within their roles; in fact, the physiotherapist correctly identified and reported the potential hazard. The patient, guardian, and communication channels are not the source of the equipment's sensor malfunction. Therefore, the origin of this hazard is localized entirely to the exoskeleton (x4)."
+      },
+      "source_file": "chief_messages.txt"
+    },
+    {
+      "agent_name": "Diagnosis Doctor",
+      "agent_key": "doctor",
+      "session": 100,
+      "total_messages": 2,
+      "messages": [
+        {
+          "id": 1,
+          "sender": "Diagnosis Doctor",
+          "sender_key": "doctor",
+          "receiver": "Peers",
+          "receiver_key": "peers",
+          "type": "AGENT",
+          "raw_type": "AIMessage",
+          "content": "Tool Calls: 1\n  - talk_to_physio_general",
+          "is_system": false
+        },
+        {
+          "id": 2,
+          "sender": "Diagnosis Doctor",
+          "sender_key": "doctor",
+          "receiver": "POIROT System",
+          "receiver_key": "poirot",
+          "type": "AGENT",
+          "raw_type": "AIMessage",
+          "content": "```json\n{\n  \"hazard_vector\": \"Equipment Malfunction and Incomplete Real-Time Reporting\",\n  \"location\": [\n    0,\n    0,\n    1,\n    1,\n    0,\n    0,\n    0\n  ],\n  \"justification\": \"The hazard originates from two primary sources. First, the Discover2Walk Exoskeleton (x4) is the direct physical origin due to a faulty ankle position sensor, which introduced erratic data and compromised the system's intended therapeutic function. Second, the General Physiotherapist (x3) is identified as a contributing location due to a procedural gap. While the physiotherapist correctly identified the sensor noise in post-session data logs, the failure to observe and report the physical manifestation of this issue (e.g., jitter, vibration, or altered gait) during the live session allowed the hazard to persist without immediate intervention. This represents a failure in real-time clinical monitoring, which is critical for patient safety and therapeutic efficacy.\"\n}\n```",
+          "is_system": false
+        }
+      ],
+      "vote": {
+        "hazard_vector": "Equipment Malfunction and Incomplete Real-Time Reporting",
+        "location": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "justification": "The hazard originates from two primary sources. First, the Discover2Walk Exoskeleton (x4) is the direct physical origin due to a faulty ankle position sensor, which introduced erratic data and compromised the system's intended therapeutic function. Second, the General Physiotherapist (x3) is identified as a contributing location due to a procedural gap. While the physiotherapist correctly identified the sensor noise in post-session data logs, the failure to observe and report the physical manifestation of this issue (e.g., jitter, vibration, or altered gait) during the live session allowed the hazard to persist without immediate intervention. This represents a failure in real-time clinical monitoring, which is critical for patient safety and therapeutic efficacy."
+      },
+      "source_file": "doctor_messages.txt"
+    },
+    {
+      "agent_name": "General Physiotherapist",
+      "agent_key": "physio_general",
+      "session": 100,
+      "total_messages": 2,
+      "messages": [
+        {
+          "id": 1,
+          "sender": "General Physiotherapist",
+          "sender_key": "physio_general",
+          "receiver": "Peers",
+          "receiver_key": "peers",
+          "type": "AGENT",
+          "raw_type": "AIMessage",
+          "content": "Tool Calls: 1\n  - talk_to_chief",
+          "is_system": false
+        },
+        {
+          "id": 2,
+          "sender": "General Physiotherapist",
+          "sender_key": "physio_general",
+          "receiver": "POIROT System",
+          "receiver_key": "poirot",
+          "type": "AGENT",
+          "raw_type": "AIMessage",
+          "content": "```json\n{\n  \"hazard_vector\": \"Equipment Malfunction - Sensor Data Integrity Failure\",\n  \"location\": [\n    0,\n    0,\n    0,\n    1,\n    0,\n    0,\n    0\n  ],\n  \"justification\": \"My analysis of the sensor data logs consistently identified a 'persistent high-frequency noise or jitter' in the left ankle position sensor. This is an anomalous measurement originating from the hardware itself, indicating a sensor malfunction, a loose connection, or electromagnetic interference. This issue is intrinsic to the Discover2Walk Exoskeleton. The other agents, including myself, the Chief of Rehabilitation, and the Diagnosis Doctor, performed our roles correctly based on the information available. The patient's condition did not cause this hardware issue. Therefore, the origin of the hazard is located exclusively within the Discover2Walk Exoskeleton.\"\n}\n```",
+          "is_system": false
+        }
+      ],
+      "vote": {
+        "hazard_vector": "Equipment Malfunction - Sensor Data Integrity Failure",
+        "location": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "justification": "My analysis of the sensor data logs consistently identified a 'persistent high-frequency noise or jitter' in the left ankle position sensor. This is an anomalous measurement originating from the hardware itself, indicating a sensor malfunction, a loose connection, or electromagnetic interference. This issue is intrinsic to the Discover2Walk Exoskeleton. The other agents, including myself, the Chief of Rehabilitation, and the Diagnosis Doctor, performed our roles correctly based on the information available. The patient's condition did not cause this hardware issue. Therefore, the origin of the hazard is located exclusively within the Discover2Walk Exoskeleton."
+      },
+      "source_file": "physio_general_messages.txt"
+    }
+  ],
+  "dimension_labels": [
+    "Diagnosis Doctor",
+    "Chief of Rehabilitation",
+    "General Physiotherapist",
+    "Discover2Walk Exoskeleton",
+    "Patient",
+    "Parent/Guardian",
+    "System Comm. Channels"
+  ],
+  "phases": {
+    "1": "Vector Space Definition",
+    "2": "Individual Analysis",
+    "3": "Peer Consultation",
+    "4": "Consensus Voting"
+  }
+}

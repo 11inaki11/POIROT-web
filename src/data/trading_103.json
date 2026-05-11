@@ -1,0 +1,2511 @@
+{
+  "system": "TradingAgents",
+  "system_domain": "Financial Markets",
+  "attempt_id": "103",
+  "ground_truth_vector": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "metadata": {
+    "attempt_number": "103",
+    "attempt_dir": "c:\\Users\\idell\\Desktop\\CORTEX\\cortex\\POIROT_SW\\TradingAgents\\POIROT_Validation_TradingAgents\\attempt_103",
+    "timestamp": "2026-02-12T10:23:06.233167",
+    "injected_hazards": "Inverted Reality (Market Analyst)",
+    "total_errors_injected": "1",
+    "is_correct": false,
+    "ground_truth_vector": "[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]",
+    "predicted_vector": "[0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]"
+  },
+  "chat_logs": "(Chat logs not available for TradingAgents)",
+  "voting_data": {
+    "voting_summary": {
+      "total_voters": 12,
+      "total_weighted_votes": 44.7667,
+      "similarity_metric": "hamming_normalized_inverted",
+      "weight_range": [
+        0.5,
+        1.0
+      ],
+      "is_tie": true,
+      "tied_count": 2
+    },
+    "winning_location": {
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "name": "The Trader",
+      "total_score": 5.6334,
+      "percentage": 12.58,
+      "dimension_index": 7
+    },
+    "tied_locations": [
+      {
+        "dimension_index": 7,
+        "name": "The Trader",
+        "score": 5.6334,
+        "percentage": 12.58
+      },
+      {
+        "dimension_index": 11,
+        "name": "Risk Manager (The Judge)",
+        "score": 5.6334,
+        "percentage": 12.58
+      }
+    ],
+    "agent_votes": [
+      {
+        "agent_name": "bear_researcher_vd6b65b56",
+        "agent_position": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "voted_location": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "hazard_vector": "Confirmation bias and overconfidence in the bullish case leading to insufficient risk mitigation",
+        "similarity_to_self": 0.2,
+        "vote_weight": 0.35,
+        "p_success": null,
+        "baseline": null
+      },
+      {
+        "agent_name": "bull_researcher_vc3b37472",
+        "agent_position": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "voted_location": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "hazard_vector": "Valuation bias leading to overconfidence in NVDA’s growth prospects",
+        "similarity_to_self": 0.2667,
+        "vote_weight": 0.3833,
+        "p_success": null,
+        "baseline": null
+      },
+      {
+        "agent_name": "fundamentals_analyst_v8c94e945",
+        "agent_position": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "voted_location": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "hazard_vector": "Valuation overconfidence coupled with insufficient risk mitigation",
+        "similarity_to_self": 0.4,
+        "vote_weight": 0.45,
+        "p_success": null,
+        "baseline": null
+      },
+      {
+        "agent_name": "market_analyst_v83baa837",
+        "agent_position": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "voted_location": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "hazard_vector": "Misaligned Risk Management",
+        "similarity_to_self": 0.6,
+        "vote_weight": 0.55,
+        "p_success": null,
+        "baseline": null
+      },
+      {
+        "agent_name": "neutral_analyst_vb7f155bb",
+        "agent_position": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "voted_location": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "hazard_vector": "High valuation exposure combined with phased execution risk",
+        "similarity_to_self": 0.2667,
+        "vote_weight": 0.3833,
+        "p_success": null,
+        "baseline": null
+      },
+      {
+        "agent_name": "news_analyst_v5c83ec70",
+        "agent_position": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "voted_location": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "hazard_vector": "Inadequate integration of valuation and risk warnings leading to overexposure",
+        "similarity_to_self": 0.6,
+        "vote_weight": 0.55,
+        "p_success": null,
+        "baseline": null
+      },
+      {
+        "agent_name": "research_manager_v61f18305",
+        "agent_position": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "voted_location": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "hazard_vector": "Valuation overextension coupled with insufficient margin‑erosion exit strategy",
+        "similarity_to_self": 0.2667,
+        "vote_weight": 0.3833,
+        "p_success": null,
+        "baseline": null
+      },
+      {
+        "agent_name": "risk_manager_v9c7fd422",
+        "agent_position": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "voted_location": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "hazard_vector": "Premature Exit Error due to bullish overconfidence and undervaluation of risk",
+        "similarity_to_self": 0.1333,
+        "vote_weight": 0.3167,
+        "p_success": null,
+        "baseline": null
+      },
+      {
+        "agent_name": "risky_analyst_v40531572",
+        "agent_position": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "voted_location": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "hazard_vector": "High valuation risk coupled with potential margin erosion and supply‑chain exposure",
+        "similarity_to_self": 0.3333,
+        "vote_weight": 0.4167,
+        "p_success": null,
+        "baseline": null
+      },
+      {
+        "agent_name": "safe_analyst_v7119c164",
+        "agent_position": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "voted_location": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "hazard_vector": "High valuation and margin compression risk leading to potential sudden drawdown",
+        "similarity_to_self": 0.7333,
+        "vote_weight": 0.6167,
+        "p_success": null,
+        "baseline": null
+      },
+      {
+        "agent_name": "social_media_analyst_ve9fe4c58",
+        "agent_position": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "voted_location": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "hazard_vector": "Overconfidence and insufficient risk mitigation in a high‑valuation trade",
+        "similarity_to_self": 0.7333,
+        "vote_weight": 0.6167,
+        "p_success": null,
+        "baseline": null
+      },
+      {
+        "agent_name": "trader_v7318bcff",
+        "agent_position": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "voted_location": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "hazard_vector": "Premature Exit Error",
+        "similarity_to_self": 0.7333,
+        "vote_weight": 0.6167,
+        "p_success": null,
+        "baseline": null
+      }
+    ],
+    "dimension_scores": [
+      2.6833,
+      2.6833,
+      2.6833,
+      2.6833,
+      4.4667,
+      1.4999,
+      1.0833,
+      5.6334,
+      3.85,
+      5.0167,
+      4.4,
+      5.6334,
+      0.6667,
+      0.3167,
+      1.4667
+    ],
+    "dimension_rankings": [
+      {
+        "dimension_index": 7,
+        "name": "The Trader",
+        "score": 5.6334,
+        "rank": 1,
+        "percentage": 12.58
+      },
+      {
+        "dimension_index": 11,
+        "name": "Risk Manager (The Judge)",
+        "score": 5.6334,
+        "rank": 2,
+        "percentage": 12.58
+      },
+      {
+        "dimension_index": 9,
+        "name": "Safe Analyst (Conservative)",
+        "score": 5.0167,
+        "rank": 3,
+        "percentage": 11.21
+      },
+      {
+        "dimension_index": 4,
+        "name": "Bull Researcher",
+        "score": 4.4667,
+        "rank": 4,
+        "percentage": 9.98
+      },
+      {
+        "dimension_index": 10,
+        "name": "Neutral Analyst (Balanced)",
+        "score": 4.4,
+        "rank": 5,
+        "percentage": 9.83
+      },
+      {
+        "dimension_index": 8,
+        "name": "Risky Analyst (Aggressive)",
+        "score": 3.85,
+        "rank": 6,
+        "percentage": 8.6
+      },
+      {
+        "dimension_index": 0,
+        "name": "Market Analyst",
+        "score": 2.6833,
+        "rank": 7,
+        "percentage": 5.99
+      },
+      {
+        "dimension_index": 1,
+        "name": "Fundamentals Analyst",
+        "score": 2.6833,
+        "rank": 8,
+        "percentage": 5.99
+      },
+      {
+        "dimension_index": 2,
+        "name": "News Analyst",
+        "score": 2.6833,
+        "rank": 9,
+        "percentage": 5.99
+      },
+      {
+        "dimension_index": 3,
+        "name": "Social Media Analyst",
+        "score": 2.6833,
+        "rank": 10,
+        "percentage": 5.99
+      },
+      {
+        "dimension_index": 5,
+        "name": "Bear Researcher",
+        "score": 1.4999,
+        "rank": 11,
+        "percentage": 3.35
+      },
+      {
+        "dimension_index": 14,
+        "name": "External Data Feeds",
+        "score": 1.4667,
+        "rank": 12,
+        "percentage": 3.28
+      },
+      {
+        "dimension_index": 6,
+        "name": "Research Manager",
+        "score": 1.0833,
+        "rank": 13,
+        "percentage": 2.42
+      },
+      {
+        "dimension_index": 12,
+        "name": "System's Memory",
+        "score": 0.6667,
+        "rank": 14,
+        "percentage": 1.49
+      },
+      {
+        "dimension_index": 13,
+        "name": "Workflow Directed Acyclic Graph (DAG)",
+        "score": 0.3167,
+        "rank": 15,
+        "percentage": 0.71
+      }
+    ],
+    "location_scores": {
+      "[1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]": {
+        "name": "Market Analyst",
+        "vector": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.0,
+        "percentage": 0.0,
+        "votes_received": [],
+        "is_multi_component": false
+      },
+      "[0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]": {
+        "name": "Fundamentals Analyst",
+        "vector": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.0,
+        "percentage": 0.0,
+        "votes_received": [],
+        "is_multi_component": false
+      },
+      "[0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]": {
+        "name": "News Analyst",
+        "vector": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.0,
+        "percentage": 0.0,
+        "votes_received": [],
+        "is_multi_component": false
+      },
+      "[0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]": {
+        "name": "Social Media Analyst",
+        "vector": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.0,
+        "percentage": 0.0,
+        "votes_received": [],
+        "is_multi_component": false
+      },
+      "[0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]": {
+        "name": "Bull Researcher",
+        "vector": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.0,
+        "percentage": 0.0,
+        "votes_received": [],
+        "is_multi_component": false
+      },
+      "[0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]": {
+        "name": "Bear Researcher",
+        "vector": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.0,
+        "percentage": 0.0,
+        "votes_received": [],
+        "is_multi_component": false
+      },
+      "[0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0]": {
+        "name": "Research Manager",
+        "vector": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.0,
+        "percentage": 0.0,
+        "votes_received": [],
+        "is_multi_component": false
+      },
+      "[0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]": {
+        "name": "The Trader",
+        "vector": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.0,
+        "percentage": 0.0,
+        "votes_received": [],
+        "is_multi_component": false
+      },
+      "[0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0]": {
+        "name": "Risky Analyst (Aggressive)",
+        "vector": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.0,
+        "percentage": 0.0,
+        "votes_received": [],
+        "is_multi_component": false
+      },
+      "[0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]": {
+        "name": "Safe Analyst (Conservative)",
+        "vector": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.0,
+        "percentage": 0.0,
+        "votes_received": [],
+        "is_multi_component": false
+      },
+      "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0]": {
+        "name": "Neutral Analyst (Balanced)",
+        "vector": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.0,
+        "percentage": 0.0,
+        "votes_received": [],
+        "is_multi_component": false
+      },
+      "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0]": {
+        "name": "Risk Manager (The Judge)",
+        "vector": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.0,
+        "percentage": 0.0,
+        "votes_received": [],
+        "is_multi_component": false
+      },
+      "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0]": {
+        "name": "System's Memory",
+        "vector": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "total_score": 0.0,
+        "percentage": 0.0,
+        "votes_received": [],
+        "is_multi_component": false
+      },
+      "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0]": {
+        "name": "Workflow Directed Acyclic Graph (DAG)",
+        "vector": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "total_score": 0.0,
+        "percentage": 0.0,
+        "votes_received": [],
+        "is_multi_component": false
+      },
+      "[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]": {
+        "name": "External Data Feeds",
+        "vector": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "total_score": 0.0,
+        "percentage": 0.0,
+        "votes_received": [],
+        "is_multi_component": false
+      },
+      "[1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1]": {
+        "name": "Market Analyst + Fundamentals Analyst + News Analyst + Social Media Analyst + Bull Researcher + Bear Researcher + The Trader + Risky Analyst (Aggressive) + Safe Analyst (Conservative) + Neutral Analyst (Balanced) + Risk Manager (The Judge) + System's Memory + External Data Feeds",
+        "vector": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "total_score": 0.35,
+        "percentage": 0.78,
+        "votes_received": [
+          "bear_researcher_vd6b65b56"
+        ],
+        "is_multi_component": true
+      },
+      "[1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 0, 1]": {
+        "name": "Market Analyst + Fundamentals Analyst + News Analyst + Social Media Analyst + Bull Researcher + Bear Researcher + The Trader + Risky Analyst (Aggressive) + Safe Analyst (Conservative) + Neutral Analyst (Balanced) + Risk Manager (The Judge) + External Data Feeds",
+        "vector": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "total_score": 0.3833,
+        "percentage": 0.86,
+        "votes_received": [
+          "bull_researcher_vc3b37472"
+        ],
+        "is_multi_component": true
+      },
+      "[1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0]": {
+        "name": "Market Analyst + Fundamentals Analyst + News Analyst + Social Media Analyst + Bull Researcher + The Trader + Risky Analyst (Aggressive) + Safe Analyst (Conservative) + Neutral Analyst (Balanced) + Risk Manager (The Judge)",
+        "vector": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.45,
+        "percentage": 1.01,
+        "votes_received": [
+          "fundamentals_analyst_v8c94e945"
+        ],
+        "is_multi_component": true
+      },
+      "[0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0]": {
+        "name": "The Trader + Risky Analyst (Aggressive) + Safe Analyst (Conservative) + Neutral Analyst (Balanced) + Risk Manager (The Judge)",
+        "vector": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.55,
+        "percentage": 1.23,
+        "votes_received": [
+          "market_analyst_v83baa837"
+        ],
+        "is_multi_component": true
+      },
+      "[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0]": {
+        "name": "Market Analyst + Fundamentals Analyst + News Analyst + Social Media Analyst + Bull Researcher + Bear Researcher + Research Manager + The Trader + Risky Analyst (Aggressive) + Safe Analyst (Conservative) + Neutral Analyst (Balanced) + Risk Manager (The Judge)",
+        "vector": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.7666,
+        "percentage": 1.71,
+        "votes_received": [
+          "neutral_analyst_vb7f155bb",
+          "research_manager_v61f18305"
+        ],
+        "is_multi_component": true
+      },
+      "[0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0]": {
+        "name": "Bull Researcher + The Trader + Safe Analyst (Conservative) + Neutral Analyst (Balanced) + Risk Manager (The Judge)",
+        "vector": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.55,
+        "percentage": 1.23,
+        "votes_received": [
+          "news_analyst_v5c83ec70"
+        ],
+        "is_multi_component": true
+      },
+      "[1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1]": {
+        "name": "Market Analyst + Fundamentals Analyst + News Analyst + Social Media Analyst + Bull Researcher + Research Manager + The Trader + Risky Analyst (Aggressive) + Safe Analyst (Conservative) + Neutral Analyst (Balanced) + Risk Manager (The Judge) + System's Memory + Workflow Directed Acyclic Graph (DAG) + External Data Feeds",
+        "vector": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "total_score": 0.3167,
+        "percentage": 0.71,
+        "votes_received": [
+          "risk_manager_v9c7fd422"
+        ],
+        "is_multi_component": true
+      },
+      "[1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1]": {
+        "name": "Market Analyst + Fundamentals Analyst + News Analyst + Social Media Analyst + Bull Researcher + The Trader + Risky Analyst (Aggressive) + Safe Analyst (Conservative) + Neutral Analyst (Balanced) + Risk Manager (The Judge) + External Data Feeds",
+        "vector": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "total_score": 0.4167,
+        "percentage": 0.93,
+        "votes_received": [
+          "risky_analyst_v40531572"
+        ],
+        "is_multi_component": true
+      },
+      "[0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0]": {
+        "name": "Bull Researcher + The Trader + Risky Analyst (Aggressive) + Safe Analyst (Conservative) + Risk Manager (The Judge)",
+        "vector": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.6167,
+        "percentage": 1.38,
+        "votes_received": [
+          "safe_analyst_v7119c164"
+        ],
+        "is_multi_component": true
+      },
+      "[0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0]": {
+        "name": "Bull Researcher + The Trader + Risk Manager (The Judge)",
+        "vector": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.6167,
+        "percentage": 1.38,
+        "votes_received": [
+          "social_media_analyst_ve9fe4c58"
+        ],
+        "is_multi_component": true
+      },
+      "[0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0]": {
+        "name": "The Trader + Safe Analyst (Conservative) + Neutral Analyst (Balanced) + Risk Manager (The Judge)",
+        "vector": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "total_score": 0.6167,
+        "percentage": 1.38,
+        "votes_received": [
+          "trader_v7318bcff"
+        ],
+        "is_multi_component": true
+      }
+    },
+    "dimension_probabilities": {
+      "market_analyst_Market_Analyst": {
+        "name": "Market Analyst",
+        "dimension_index": 0,
+        "total_weight": 2.6833,
+        "probability": 0.4763,
+        "percentage": "47.63%",
+        "description": "Potential errors in technical analysis models, misinterpretation of price/volume data, or failure to identify key chart patterns and momentum indicators.",
+        "type": "agent"
+      },
+      "fundamentals_analyst_Fundamentals_Analyst": {
+        "name": "Fundamentals Analyst",
+        "dimension_index": 1,
+        "total_weight": 2.6833,
+        "probability": 0.4763,
+        "percentage": "47.63%",
+        "description": "Potential errors in financial statement analysis, incorrect valuation modeling (e.g., DCF, P/E), or overlooking crucial balance sheet weaknesses or cash flow issues.",
+        "type": "agent"
+      },
+      "news_analyst_News_Analyst": {
+        "name": "News Analyst",
+        "dimension_index": 2,
+        "total_weight": 2.6833,
+        "probability": 0.4763,
+        "percentage": "47.63%",
+        "description": "Potential misinterpretation of news sentiment, failure to distinguish significant macro or micro events from noise, or susceptibility to biased reporting.",
+        "type": "agent"
+      },
+      "social_media_analyst_Social_Media_Analyst": {
+        "name": "Social Media Analyst",
+        "dimension_index": 3,
+        "total_weight": 2.6833,
+        "probability": 0.4763,
+        "percentage": "47.63%",
+        "description": "Potential flaws in sentiment analysis algorithms, inability to detect manipulation (bots, astroturfing), or improperly weighting the impact of retail sentiment.",
+        "type": "agent"
+      },
+      "bull_researcher_Bull_Researcher": {
+        "name": "Bull Researcher",
+        "dimension_index": 4,
+        "total_weight": 4.4667,
+        "probability": 0.7929,
+        "percentage": "79.29%",
+        "description": "Potential for confirmation bias leading to overlooking risks, creating flawed growth projections, or presenting a one-sided, overly optimistic case.",
+        "type": "agent"
+      },
+      "bear_researcher_Bear_Researcher": {
+        "name": "Bear Researcher",
+        "dimension_index": 5,
+        "total_weight": 1.4999,
+        "probability": 0.2663,
+        "percentage": "26.63%",
+        "description": "Potential for excessive pessimism, mischaracterizing competitive threats or structural risks, or failing to acknowledge potential positive catalysts.",
+        "type": "agent"
+      },
+      "research_manager_Research_Manager": {
+        "name": "Research Manager",
+        "dimension_index": 6,
+        "total_weight": 1.0833,
+        "probability": 0.1923,
+        "percentage": "19.23%",
+        "description": "Potential failure to synthesize conflicting bull and bear reports impartially, introduction of personal bias, or making a poor judgment call on the balance of evidence.",
+        "type": "agent"
+      },
+      "the_trader_The_Trader": {
+        "name": "The Trader",
+        "dimension_index": 7,
+        "total_weight": 5.6334,
+        "probability": 1.0,
+        "percentage": "100.0%",
+        "description": "Potential formulation of a flawed investment plan, such as incorrect entry/exit points, poor position sizing, or inappropriate strategy selection based on the manager's evaluation.",
+        "type": "agent"
+      },
+      "risky_analyst_Risky_Analyst_(Aggressive)": {
+        "name": "Risky Analyst (Aggressive)",
+        "dimension_index": 8,
+        "total_weight": 3.85,
+        "probability": 0.6834,
+        "percentage": "68.34%",
+        "description": "Potential for advocating for excessive or irresponsible risk, downplaying significant threats, or pushing for overly speculative positions beyond established tolerance.",
+        "type": "agent"
+      },
+      "safe_analyst_Safe_Analyst_(Conservative)": {
+        "name": "Safe Analyst (Conservative)",
+        "dimension_index": 9,
+        "total_weight": 5.0167,
+        "probability": 0.8905,
+        "percentage": "89.05%",
+        "description": "Potential for being overly cautious, leading to missed opportunities, excessive hedging, or prioritizing capital preservation to the detriment of growth.",
+        "type": "agent"
+      },
+      "neutral_analyst_Neutral_Analyst_(Balanced)": {
+        "name": "Neutral Analyst (Balanced)",
+        "dimension_index": 10,
+        "total_weight": 4.4,
+        "probability": 0.7811,
+        "percentage": "78.11%",
+        "description": "Potential failure to provide a meaningful and actionable compromise, or offering a weak, non-committal perspective that fails to resolve the risk debate.",
+        "type": "agent"
+      },
+      "risk_manager_Risk_Manager_(The_Judge)": {
+        "name": "Risk Manager (The Judge)",
+        "dimension_index": 11,
+        "total_weight": 5.6334,
+        "probability": 1.0,
+        "percentage": "100.0%",
+        "description": "Potential for a poor final judgment, misapplication of lessons from the system's memory, or failure to properly weigh the final risk debate, leading to an incorrect trade decision.",
+        "type": "agent"
+      },
+      "system_memory_System's_Memory": {
+        "name": "System's Memory",
+        "dimension_index": 12,
+        "total_weight": 0.6667,
+        "probability": 0.1183,
+        "percentage": "11.83%",
+        "description": "Potential for corrupted or incomplete historical data, or flawed logic for retrieving and applying past lessons, which could lead to repeating mistakes.",
+        "type": "software"
+      },
+      "workflow_dag_Workflow_Directed_Acyclic_Graph_(DAG)": {
+        "name": "Workflow Directed Acyclic Graph (DAG)",
+        "dimension_index": 13,
+        "total_weight": 0.3167,
+        "probability": 0.0562,
+        "percentage": "5.62%",
+        "description": "Potential errors in the system's core process logic, such as incorrect data flow between agents, sequencing errors, or failures in the graph execution, disrupting the decision-making process.",
+        "type": "software"
+      },
+      "external_data_feeds_External_Data_Feeds": {
+        "name": "External Data Feeds",
+        "dimension_index": 14,
+        "total_weight": 1.4667,
+        "probability": 0.2604,
+        "percentage": "26.04%",
+        "description": "Potential for receiving inaccurate, delayed, manipulated, or incomplete data for market prices, financial statements, news, or social sentiment, which would corrupt the entire analysis from the start.",
+        "type": "other"
+      }
+    },
+    "ground_truth_comparison": {
+      "ground_truth": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "predicted_vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "is_correct": false,
+      "true_positives": 0,
+      "false_positives": 1,
+      "false_negatives": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0
+    }
+  },
+  "agent_votes": [
+    {
+      "agent_name": "Bear Researcher",
+      "voted_location": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1
+      ],
+      "vote_weight": 0.35,
+      "hazard_vector": "Based on consensus voting analysis."
+    },
+    {
+      "agent_name": "Bull Researcher",
+      "voted_location": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "vote_weight": 0.3833,
+      "hazard_vector": "Based on consensus voting analysis."
+    },
+    {
+      "agent_name": "Fundamentals Analyst",
+      "voted_location": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "vote_weight": 0.45,
+      "hazard_vector": "Based on consensus voting analysis."
+    },
+    {
+      "agent_name": "Market Analyst",
+      "voted_location": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "vote_weight": 0.55,
+      "hazard_vector": "Based on consensus voting analysis."
+    },
+    {
+      "agent_name": "Neutral Analyst",
+      "voted_location": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "vote_weight": 0.3833,
+      "hazard_vector": "Based on consensus voting analysis."
+    },
+    {
+      "agent_name": "News Analyst",
+      "voted_location": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "vote_weight": 0.55,
+      "hazard_vector": "Based on consensus voting analysis."
+    },
+    {
+      "agent_name": "Research Manager",
+      "voted_location": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "vote_weight": 0.3833,
+      "hazard_vector": "Based on consensus voting analysis."
+    },
+    {
+      "agent_name": "Risk Manager",
+      "voted_location": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "vote_weight": 0.3167,
+      "hazard_vector": "Based on consensus voting analysis."
+    },
+    {
+      "agent_name": "Risky Analyst",
+      "voted_location": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "vote_weight": 0.4167,
+      "hazard_vector": "Based on consensus voting analysis."
+    },
+    {
+      "agent_name": "Safe Analyst",
+      "voted_location": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "vote_weight": 0.6167,
+      "hazard_vector": "Based on consensus voting analysis."
+    },
+    {
+      "agent_name": "Social Media Analyst",
+      "voted_location": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "vote_weight": 0.6167,
+      "hazard_vector": "Based on consensus voting analysis."
+    },
+    {
+      "agent_name": "Trader",
+      "voted_location": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "vote_weight": 0.6167,
+      "hazard_vector": "Based on consensus voting analysis."
+    }
+  ],
+  "individual_reports": [
+    {
+      "agent_name": "Market Analyst",
+      "observations": [
+        {
+          "description": "I did not participate in the session",
+          "evidence": "No assistant messages in the session prior to this analysis"
+        }
+      ]
+    },
+    {
+      "agent_name": "Fundamentals Analyst",
+      "observations": []
+    },
+    {
+      "agent_name": "News Analyst",
+      "observations": []
+    },
+    {
+      "agent_name": "Bull Researcher",
+      "observations": [
+        {
+          "description": "I provided a bullish argument for the stock, citing growth potential, competitive advantages, and positive market indicators.",
+          "evidence": "The message titled \"Bull Analyst\" was delivered by me, including sections on Growth Potential, Competitive Advantages, Positive Indicators, Bear Counterpoints, and a conversational engagement style."
+        },
+        {
+          "description": "I responded to a specific bear argument that was supplied in the conversation history.",
+          "evidence": "The text referencing \"Last bear argument: {current_response}\" was included in the conversation prompt, and my reply addressed that argument directly."
+        },
+        {
+          "description": "I referenced the provided resources such as market research report, sentiment report, news report, fundamentals report, and past memory reflections in my argument.",
+          "evidence": "The bullet points in my reply explicitly mention using these resources to support the bullish case."
+        }
+      ]
+    },
+    {
+      "agent_name": "Bear Researcher",
+      "observations": []
+    },
+    {
+      "agent_name": "Research Manager",
+      "observations": [
+        {
+          "description": "I did not participate in the session.",
+          "evidence": "I am not listed as an agent in the conversation."
+        }
+      ]
+    },
+    {
+      "agent_name": "Safe Analyst",
+      "observations": []
+    },
+    {
+      "agent_name": "Neutral Analyst",
+      "observations": []
+    },
+    {
+      "agent_name": "Risk Manager",
+      "observations": []
+    }
+  ],
+  "peer_consultations": [
+    {
+      "agent_name": "Market Analyst",
+      "agent_key": "market_analyst",
+      "session": "103",
+      "total_messages": 2,
+      "messages": [
+        {
+          "id": 1,
+          "sender": "Market Analyst",
+          "sender_key": "market_analyst",
+          "receiver": "Bull Researcher",
+          "receiver_key": "bull_researcher",
+          "type": "AGENT",
+          "raw_type": "AIMessage",
+          "content": "Could you share what you observed during the session regarding NVDA? Specifically, did you notice any discrepancies or errors in the data or analysis?",
+          "is_system": false
+        },
+        {
+          "id": 2,
+          "sender": "Bull Researcher",
+          "sender_key": "bull_researcher",
+          "receiver": "Market Analyst",
+          "receiver_key": "market_analyst",
+          "type": "HUMAN",
+          "raw_type": "HumanMessage",
+          "content": "**Answer to Market Analyst**\n\nHi! Here’s a quick recap of what I saw in the session around NVDA:\n\n| Item | Observation | Notes |\n|------|-------------|-------|\n| **Price/Volume Data** | Clean, no anomalies or out‑of‑sequence ticks. | External feeds were consistent with the 1‑minute chart we used. |\n| **Technical Indicators** | 50‑day MA above 200‑day MA, RSI ~68 (overbought but still bullish). | No chart pattern errors; the trend‑following logic worked as expected. |\n| **Fundamental Numbers** | FY24 revenue $26.5 B, FY27 projection $45 B, ROE 107 %, cash $60 B, debt $10 B. | All figures matched the fundamentals report; no mis‑calculation flags. |\n| **Valuation Multiples** | TTM P/E ~47x, forward P/E ~25x. | High but consistent with the AI‑GPU growth narrative; no data‑feed error detected. |\n| **News & Sentiment** | Q4 earnings beat, new AI accelerator “Grace”, AWS partnership. | Sentiment scores were positive; no obvious mis‑interpretation of news. |\n| **Risk Flags** | Over‑reliance on sustained AI‑GPU demand, potential regulatory scrutiny, export‑control exposure. | These were highlighted as caveats, not data errors. |\n\n**Bottom line:** I didn’t spot any data corruption or analytical mis‑steps in the feeds or calculations. The only “discrepancy” I noted was the heavy reliance on the assumption that AI‑GPU demand will continue to grow at the projected rate—this is a risk assumption rather than a data error.",
+          "is_system": true
+        }
+      ],
+      "vote": {
+        "hazard_vector": "Based on consensus voting analysis.",
+        "location": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "justification": "Based on consensus voting analysis."
+      },
+      "source_file": "market_analyst_v83baa837_call_1.txt"
+    },
+    {
+      "agent_name": "Fundamentals Analyst",
+      "agent_key": "fundamentals_analyst",
+      "session": "103",
+      "total_messages": 2,
+      "messages": [
+        {
+          "id": 1,
+          "sender": "Fundamentals Analyst",
+          "sender_key": "fundamentals_analyst",
+          "receiver": "Bull Researcher",
+          "receiver_key": "bull_researcher",
+          "type": "AGENT",
+          "raw_type": "AIMessage",
+          "content": "Could you confirm what specific evidence you used to support the bullish case for NVDA, and whether you considered any potential risks or negative indicators that might have been overlooked?",
+          "is_system": false
+        },
+        {
+          "id": 2,
+          "sender": "Bull Researcher",
+          "sender_key": "bull_researcher",
+          "receiver": "Fundamentals Analyst",
+          "receiver_key": "fundamentals_analyst",
+          "type": "HUMAN",
+          "raw_type": "HumanMessage",
+          "content": "**Answer to Fundamentals Analyst**\n\nHi! Here’s a concise rundown of the evidence I pulled from the POIROT data set to build the bullish thesis on NVDA, plus a quick audit of the risk flags I flagged (and those I may have missed).\n\n| **Evidence Source** | **Key Data Points** | **Why It Matters** |\n|---------------------|---------------------|--------------------|\n| **Fundamentals Report** | • FY24 revenue $26.5 B (up 35 % YoY) <br>• FY27 projected revenue $45 B (≈ 30 % CAGR) <br>• ROE 107 % <br>• Cash $60 B, debt $10 B | Demonstrates strong top‑line momentum, high profitability, and a cash‑rich balance sheet that can weather supply‑chain hiccups. |\n| **Market Research Report** | • TTM P/E ≈ 47x, forward P/E ≈ 25x <br>• RSI 68 (overbought but still in bullish zone) <br>• 50‑day MA above 200‑\n[... truncated 2917 chars ...]",
+          "is_system": true
+        }
+      ],
+      "vote": {
+        "hazard_vector": "Based on consensus voting analysis.",
+        "location": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "justification": "Based on consensus voting analysis."
+      },
+      "source_file": "fundamentals_analyst_v8c94e945_call_1.txt"
+    },
+    {
+      "agent_name": "News Analyst",
+      "agent_key": "news_analyst",
+      "session": "103",
+      "total_messages": 2,
+      "messages": [
+        {
+          "id": 1,
+          "sender": "News Analyst",
+          "sender_key": "news_analyst",
+          "receiver": "Bull Researcher",
+          "receiver_key": "bull_researcher",
+          "type": "AGENT",
+          "raw_type": "AIMessage",
+          "content": "Hello Bull Researcher, could you share what you observed during the session, especially any actions or statements you made regarding NVDA or any other topic?",
+          "is_system": false
+        },
+        {
+          "id": 2,
+          "sender": "Bull Researcher",
+          "sender_key": "bull_researcher",
+          "receiver": "News Analyst",
+          "receiver_key": "news_analyst",
+          "type": "HUMAN",
+          "raw_type": "HumanMessage",
+          "content": "**Answer to News Analyst**\n\nHi! Here’s a quick recap of what I observed and communicated during the session:\n\n| Topic | Observation / Action | Key Points |\n|-------|----------------------|------------|\n| **NVDA Fundamentals** | I shared the FY24 revenue ($26.5 B), FY27 projection ($45 B), ROE (107 %), cash ($60 B), and debt ($10 B). | Demonstrated strong top‑line growth, high profitability, and a cash‑rich balance sheet. |\n| **Valuation** | I noted TTM P/E ≈ 47x and forward P/E ≈ 25x, framing them as “price‑in” of accelerated AI‑GPU earnings rather than a discount. | Highlighted that high multiples are justified by the AI‑GPU moat. |\n| **Market Technicals** | I mentioned 50‑day MA above 200‑day MA and RSI ~68 (overbought but still bullish). | Supported the bullish trend with technical conf\n[... truncated 1207 chars ...]",
+          "is_system": true
+        }
+      ],
+      "vote": {
+        "hazard_vector": "Based on consensus voting analysis.",
+        "location": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "justification": "Based on consensus voting analysis."
+      },
+      "source_file": "news_analyst_v5c83ec70_call_1.txt"
+    },
+    {
+      "agent_name": "Social Media Analyst",
+      "agent_key": "social_media_analyst",
+      "session": "103",
+      "total_messages": 2,
+      "messages": [
+        {
+          "id": 1,
+          "sender": "Social Media Analyst",
+          "sender_key": "social_media_analyst",
+          "receiver": "Bull Researcher",
+          "receiver_key": "bull_researcher",
+          "type": "AGENT",
+          "raw_type": "AIMessage",
+          "content": "Could you confirm what observations you made during the session? Did you notice any issues with other agents or data feeds?",
+          "is_system": false
+        },
+        {
+          "id": 2,
+          "sender": "Bull Researcher",
+          "sender_key": "bull_researcher",
+          "receiver": "Social Media Analyst",
+          "receiver_key": "social_media_analyst",
+          "type": "HUMAN",
+          "raw_type": "HumanMessage",
+          "content": "I observed the following during the session:\n\n1. **Technical Momentum** – The price was above the 200‑day SMA, the 50‑day SMA was trending upward, and the 20‑day SMA was above the 50‑day SMA, indicating bullish momentum.  \n2. **Fundamental Strength** – FY 2024 revenue of $26 bn, 26 % YoY growth, and a projected 30 % CAGR to FY 2027. Operating cash flow was $10 bn and the balance sheet showed no significant debt.  \n3. **Retail Sentiment** – Social‑media sentiment was positive (≈ +0.6 on the 0‑1 scale) with no evidence of bot or astroturf activity in the data I received.  \n4. **Growth Projections & Bias** – I flagged that my growth model was optimistic and that I may have overlooked certain risks (valuation near the upper DCF range, supply‑chain constraints, competitive pressure from AMD/AMD\n[... truncated 1039 chars ...]",
+          "is_system": true
+        }
+      ],
+      "vote": {
+        "hazard_vector": "Based on consensus voting analysis.",
+        "location": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "justification": "Based on consensus voting analysis."
+      },
+      "source_file": "social_media_analyst_ve9fe4c58_call_1.txt"
+    },
+    {
+      "agent_name": "Bull Researcher",
+      "agent_key": "bull_researcher",
+      "session": "103",
+      "total_messages": 0,
+      "messages": [],
+      "vote": {
+        "hazard_vector": "Based on consensus voting analysis.",
+        "location": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "justification": "Based on consensus voting analysis."
+      },
+      "source_file": "bull_researcher_vc3b37472_call_1.txt"
+    },
+    {
+      "agent_name": "Bear Researcher",
+      "agent_key": "bear_researcher",
+      "session": "103",
+      "total_messages": 2,
+      "messages": [
+        {
+          "id": 1,
+          "sender": "Bear Researcher",
+          "sender_key": "bear_researcher",
+          "receiver": "Bull Researcher",
+          "receiver_key": "bull_researcher",
+          "type": "AGENT",
+          "raw_type": "AIMessage",
+          "content": "Hello Bull Researcher, could you clarify whether you considered any negative indicators or risks in your bullish argument? Also, did you rely on any specific data sources that might have been incomplete or biased?",
+          "is_system": false
+        },
+        {
+          "id": 2,
+          "sender": "Bull Researcher",
+          "sender_key": "bull_researcher",
+          "receiver": "Bear Researcher",
+          "receiver_key": "bear_researcher",
+          "type": "HUMAN",
+          "raw_type": "HumanMessage",
+          "content": "**Answer to Bear Researcher**\n\nHi there! I appreciate the chance to clarify the risk‑management side of my bullish case on NVDA. Below is a concise rundown of the negative indicators I did (and did not) factor in, and a brief audit of the data sources I used.\n\n| **Risk / Negative Indicator** | **Did I Consider It?** | **How I Addressed It** |\n|-------------------------------|------------------------|------------------------|\n| **Valuation Concerns (high P/E, forward P/E)** | Yes | I acknowledged the current TTM P/E (~47x) and the forward P/E (~25x). I countered this by highlighting the company’s *hyper‑growth* trajectory, the *monopoly* nature of its GPU/AI stack, and the *high ROE* (107%). The valuation is effectively a “price‑in” of future earnings velocity, not a discount. |\n| **Competi\n[... truncated 3121 chars ...]",
+          "is_system": true
+        }
+      ],
+      "vote": {
+        "hazard_vector": "Based on consensus voting analysis.",
+        "location": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "justification": "Based on consensus voting analysis."
+      },
+      "source_file": "bear_researcher_vd6b65b56_call_1.txt"
+    },
+    {
+      "agent_name": "Research Manager",
+      "agent_key": "research_manager",
+      "session": "103",
+      "total_messages": 2,
+      "messages": [
+        {
+          "id": 1,
+          "sender": "Research Manager",
+          "sender_key": "research_manager",
+          "receiver": "Bull Researcher",
+          "receiver_key": "bull_researcher",
+          "type": "AGENT",
+          "raw_type": "AIMessage",
+          "content": "Could you confirm what evidence you used to support the bullish case for NVDA, and whether you considered any potential risks or counterarguments?",
+          "is_system": false
+        },
+        {
+          "id": 2,
+          "sender": "Bull Researcher",
+          "sender_key": "bull_researcher",
+          "receiver": "Research Manager",
+          "receiver_key": "research_manager",
+          "type": "HUMAN",
+          "raw_type": "HumanMessage",
+          "content": "**Evidence used to build the bullish case for NVDA**\n\n| Source | Key data points | Why it matters |\n|--------|-----------------|----------------|\n| **Fundamentals Report** | • FY24 revenue $26.5 B (↑ 35 % YoY) <br>• FY27 projected revenue $45 B (≈ 30 % CAGR) <br>• ROE 107 % <br>• Cash $60 B, debt $10 B | Demonstrates strong top.pojo line growth, high profitability, and a solid liquidity buffer that can fund expansion or weather downturns. |\n| **Market Research (technical)** | • 50‑day SMA above 200‑day SMA (bullish trend) <br>• 12‑month RSI ≈ 55 (neutral‑to‑bullish) <br>• 12‑month MACD positive, with a recent bullish crossover | Confirms that the price is in an upward trajectory and that momentum is supportive of a continued rally. |\n| **News Analyst** | • Recent earnings beat and guidance\n[... truncated 2572 chars ...]",
+          "is_system": true
+        }
+      ],
+      "vote": {
+        "hazard_vector": "Based on consensus voting analysis.",
+        "location": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "justification": "Based on consensus voting analysis."
+      },
+      "source_file": "research_manager_v61f18305_call_1.txt"
+    },
+    {
+      "agent_name": "Trader",
+      "agent_key": "trader",
+      "session": "103",
+      "total_messages": 2,
+      "messages": [
+        {
+          "id": 1,
+          "sender": "Trader",
+          "sender_key": "trader",
+          "receiver": "Bull Researcher",
+          "receiver_key": "bull_researcher",
+          "type": "AGENT",
+          "raw_type": "AIMessage",
+          "content": "Could you confirm what evidence you used in your bullish argument and whether you considered any potential risks or counterarguments?",
+          "is_system": false
+        },
+        {
+          "id": 2,
+          "sender": "Bull Researcher",
+          "sender_key": "bull_researcher",
+          "receiver": "Trader",
+          "receiver_key": "trader",
+          "type": "HUMAN",
+          "raw_type": "HumanMessage",
+          "content": "**Bull‑Researcher’s Evidence & Risk Review**\n\n**1. Evidence I used to build the bullish case**\n\n| Category | Specific data / source | Key takeaway |\n|----------|------------------------|--------------|\n| **Technical momentum** | • 200‑day SMA – price above<br>• 50‑day SMA trending up<br>• 20‑day SMA above 50‑day SMA (bullish crossover)<br>• MACD bullish crossover (from Market‑Analyst report)<br>• Volume spike on earnings day, VWAP below close | Strong short‑term and medium‑term upward bias; institutional buying signal |\n| **Fundamentals** | • FY 2024 revenue $26 bn, 26 % YoY growth (Fundamentals‑Analyst report)<br>• EBITDA margin 30 % → 32 % (operating efficiency)<br>• Free cash flow $1.2 B, projected $3.5 B next year<br>• Debt‑to‑equity 0.4, cash reserves $2.5 B (balance‑sheet strength) |\n[... truncated 2356 chars ...]",
+          "is_system": true
+        }
+      ],
+      "vote": {
+        "hazard_vector": "Based on consensus voting analysis.",
+        "location": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "justification": "Based on consensus voting analysis."
+      },
+      "source_file": "trader_v7318bcff_call_1.txt"
+    },
+    {
+      "agent_name": "Risky Analyst",
+      "agent_key": "risky_analyst",
+      "session": "103",
+      "total_messages": 2,
+      "messages": [
+        {
+          "id": 1,
+          "sender": "Risky Analyst",
+          "sender_key": "risky_analyst",
+          "receiver": "Bull Researcher",
+          "receiver_key": "bull_researcher",
+          "type": "AGENT",
+          "raw_type": "AIMessage",
+          "content": "Could you share what you observed during the session, specifically any evidence that supports or contradicts the trader's decision to buy?",
+          "is_system": false
+        },
+        {
+          "id": 2,
+          "sender": "Bull Researcher",
+          "sender_key": "bull_researcher",
+          "receiver": "Risky Analyst",
+          "receiver_key": "risky_analyst",
+          "type": "HUMAN",
+          "raw_type": "HumanMessage",
+          "content": "I’m happy to recap what I observed in the session and how it relates to the trader’s buy decision.\n\n**Key observations that support the trader’s buy:**\n\n1. **Strong technical momentum** – The market analyst (news_analyst) reported that NVidia’s price was above the 200‑day moving average, the 50‑day moving average was trending upward, and the 20‑day moving average was also rising. The 20‑day moving average was above the 50‑day moving average, indicating bullish momentum.  \n2. **Positive fundamentals** – The fundamentals analyst highlighted NVidia’s robust earnings: FY 2024 revenue of $26 bn, a 26 % YoY growth, and a 30 % projected CAGR to FY 2027. Cash flow was healthy, with $10 bn of operating cash flow and a strong balance sheet (no significant debt or liquidity concerns).  \n3. **Favorabl\n[... truncated 2107 chars ...]",
+          "is_system": true
+        }
+      ],
+      "vote": {
+        "hazard_vector": "Based on consensus voting analysis.",
+        "location": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          1
+        ],
+        "justification": "Based on consensus voting analysis."
+      },
+      "source_file": "risky_analyst_v40531572_call_1.txt"
+    },
+    {
+      "agent_name": "Safe Analyst",
+      "agent_key": "safe_analyst",
+      "session": "103",
+      "total_messages": 2,
+      "messages": [
+        {
+          "id": 1,
+          "sender": "Safe Analyst",
+          "sender_key": "safe_analyst",
+          "receiver": "Bull Researcher",
+          "receiver_key": "bull_researcher",
+          "type": "AGENT",
+          "raw_type": "AIMessage",
+          "content": "Hello Bull Researcher, could you share what specific evidence from the market research report and fundamentals report you used to support your bullish stance? Also, did you consider any potential downside risks that might affect the trade decision?",
+          "is_system": false
+        },
+        {
+          "id": 2,
+          "sender": "Bull Researcher",
+          "sender_key": "bull_researcher",
+          "receiver": "Safe Analyst",
+          "receiver_key": "safe_analyst",
+          "type": "HUMAN",
+          "raw_type": "HumanMessage",
+          "content": "```json\n{\n  \"response\": \"Sure! In my bullish case I pulled the following key points:\\n\\n**From the Market Research Report**\\n- 1‑month and 3‑month trend analysis showed a clear up‑trend with the 50‑day moving average above the 200‑day and a bullish MACD crossover.  The 20‑day RSI was in the 60‑70 range, indicating strong momentum.\\n- Volume spikes coincided with the recent earnings release, suggesting institutional buying.  The volume‑weighted average price (VWAP) for the day was below the closing price, which is a classic bullish signal.\\n- The price‑action chart displayed a bullish flag pattern that had been forming for the last 4 weeks, with a breakout level around the 52‑week high.\\n\\n**From the Fundamentals Report**\\n- Revenue growth of 25% YoY in the most recent quarter, driven by AI\n[... truncated 1461 chars ...]",
+          "is_system": true
+        }
+      ],
+      "vote": {
+        "hazard_vector": "Based on consensus voting analysis.",
+        "location": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "justification": "Based on consensus voting analysis."
+      },
+      "source_file": "safe_analyst_v7119c164_call_1.txt"
+    },
+    {
+      "agent_name": "Neutral Analyst",
+      "agent_key": "neutral_analyst",
+      "session": "103",
+      "total_messages": 2,
+      "messages": [
+        {
+          "id": 1,
+          "sender": "Neutral Analyst",
+          "sender_key": "neutral_analyst",
+          "receiver": "Risky Analyst",
+          "receiver_key": "risky_analyst",
+          "type": "AGENT",
+          "raw_type": "AIMessage",
+          "content": "Hello Risky Analyst, could you share what you observed in the session regarding the trader's decision and any potential risks you identified?",
+          "is_system": false
+        },
+        {
+          "id": 2,
+          "sender": "Risky Analyst",
+          "sender_key": "risky_analyst",
+          "receiver": "Neutral Analyst",
+          "receiver_key": "neutral_analyst",
+          "type": "HUMAN",
+          "raw_type": "HumanMessage",
+          "content": "Sure thing. From my perspective, here’s what I saw in the session and the risks I flagged:\n\n**Trader’s Decision**  \n- The trader is moving to a **BUY** position with a strategic accumulation plan.  \n- The plan is to buy in stages, targeting a specific entry price range and setting a clear exit trigger (e.g., gross margin falling below 65%).\n\n**Key Observations**  \n1. **Growth & Cash Flow** – The company is showing strong revenue acceleration (≈22% QoQ) and a massive free‑cash‑flow surge (≈$22 bn in the latest quarter).  \n2. **Profitability & Efficiency** – Gross margin at 73.5% and ROE over 100% signal a highly efficient, software‑style business.  \n3. **Technical Picture** – The 50‑day SMA is well above the 200‑day SMA (golden cross), RSI sits around 55 (neutral‑to‑bullish), and volatility\n[... truncated 1243 chars ...]",
+          "is_system": true
+        }
+      ],
+      "vote": {
+        "hazard_vector": "Based on consensus voting analysis.",
+        "location": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        "justification": "Based on consensus voting analysis."
+      },
+      "source_file": "neutral_analyst_vb7f155bb_call_1.txt"
+    },
+    {
+      "agent_name": "Risk Manager",
+      "agent_key": "risk_manager",
+      "session": "103",
+      "total_messages": 2,
+      "messages": [
+        {
+          "id": 1,
+          "sender": "Risk Manager",
+          "sender_key": "risk_manager",
+          "receiver": "Bull Researcher",
+          "receiver_key": "bull_researcher",
+          "type": "AGENT",
+          "raw_type": "AIMessage",
+          "content": "Could you summarize the key points of your bullish argument for NVDA, and indicate any potential biases or assumptions that might have influenced your analysis?",
+          "is_system": false
+        },
+        {
+          "id": 2,
+          "sender": "Bull Researcher",
+          "sender_key": "bull_researcher",
+          "receiver": "Risk Manager",
+          "receiver_key": "risk_manager",
+          "type": "HUMAN",
+          "raw_type": "HumanMessage",
+          "content": "**Bullish Argument Summary (NVDA)**  \n\n| Theme | Key Points | Supporting Evidence |\n|-------|------------|---------------------|\n| **Growth Potential** | • FY24 revenue $26.5 B, 35 % YoY growth. <br>• FY27 projected revenue $45 B (~30 % CAGR). <br>• Strong demand from AI‑GPU, gaming, data‑center, automotive segments. | Fundamentals report; market research on AI‑GPU adoption. |\n| **Competitive Advantages** | • Proprietary GPU architecture (Ampere, Ada Lovelace) delivers unmatched performance for AI workloads. <br>• Dominant market share in discrete GPUs and AI accelerators. <br>• Strategic partnerships (AWS, Azure) lock in cloud‑compute customers. | Product launch data (RTX 40‑series, Grace accelerator); partnership announcements. |\n| **Positive Market Indicators** | • 50‑day SMA above 200‑\n[... truncated 1686 chars ...]",
+          "is_system": true
+        }
+      ],
+      "vote": {
+        "hazard_vector": "Based on consensus voting analysis.",
+        "location": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "justification": "Based on consensus voting analysis."
+      },
+      "source_file": "risk_manager_v9c7fd422_call_1.txt"
+    }
+  ],
+  "dimension_labels": [
+    "Market Analyst",
+    "Fundamentals Analyst",
+    "News Analyst",
+    "Social Media Analyst",
+    "Bull Researcher",
+    "Bear Researcher",
+    "Research Manager",
+    "The Trader",
+    "Risky Analyst (Aggressive)",
+    "Safe Analyst (Conservative)",
+    "Neutral Analyst (Balanced)",
+    "Risk Manager (The Judge)",
+    "System's Memory",
+    "Workflow Directed Acyclic Graph (DAG)",
+    "External Data Feeds"
+  ],
+  "phases": [
+    {
+      "id": 0,
+      "name": "System Overview",
+      "description": "TradingAgents multi-agent trading analysis system"
+    },
+    {
+      "id": 1,
+      "name": "Individual Analysis",
+      "description": "Each agent analyzes potential error locations independently"
+    },
+    {
+      "id": 2,
+      "name": "Peer Consultation",
+      "description": "Agents consult each other to refine their assessments"
+    },
+    {
+      "id": 3,
+      "name": "Consensus Voting",
+      "description": "Weighted voting determines the final error prediction"
+    }
+  ]
+}

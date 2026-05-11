@@ -381,10 +381,10 @@ export default function Home() {
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
               {[
-                { model: 'Gemini 2.5 Pro',   poirot: 45, baseline: 28, color: '#185FA5' },
-                { model: 'DeepSeek Reasoner', poirot: 43, baseline: 17, color: '#993556' },
-                { model: 'GPT-oss 120B',      poirot: 32, baseline: 31, color: '#10b981' },
-                { model: 'GPT-oss 20B',       poirot: 20, baseline: 14, color: '#8b5cf6' },
+                { model: 'Gemini 2.5 Pro',    poirot: 40.5, baseline: 27.8, color: '#185FA5' },
+                { model: 'DeepSeek Reasoner', poirot: 42.3, baseline: 16.7, color: '#993556' },
+                { model: 'GPT-oss 120B',      poirot: 31.3, baseline: 32.7, color: '#10b981' },
+                { model: 'GPT-oss 20B',       poirot: 19.3, baseline: 12.7, color: '#8b5cf6' },
               ].map(({ model, poirot, baseline, color }) => (
                 <div key={model}>
                   <div style={{ fontSize: '0.82rem', fontWeight: 600, color: 'var(--text-primary)', marginBottom: 6 }}>
@@ -421,37 +421,33 @@ export default function Home() {
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
               {[
-                { model: 'Gemini 2.5 Pro',   poirot: null, baseline: null, color: '#185FA5' },
-                { model: 'DeepSeek Reasoner', poirot: null, baseline: null, color: '#993556' },
-                { model: 'GPT-oss 120B',      poirot: null, baseline: null, color: '#10b981' },
-                { model: 'GPT-oss 20B',       poirot: null, baseline: null, color: '#8b5cf6' },
-              ].map(({ model, color }) => (
+                { model: 'Gemini 2.5 Pro',    poirot: 66.7, baseline: 25.0, color: '#185FA5' },
+                { model: 'DeepSeek Reasoner', poirot: 44.1, baseline: 25.5, color: '#993556' },
+                { model: 'GPT-oss 120B',      poirot: 48.7, baseline: 34.4, color: '#10b981' },
+                { model: 'GPT-oss 20B',       poirot: 48.4, baseline: 40.2, color: '#8b5cf6' },
+              ].map(({ model, poirot, baseline, color }) => (
                 <div key={model}>
                   <div style={{ fontSize: '0.82rem', fontWeight: 600, color: 'var(--text-primary)', marginBottom: 6 }}>
                     {model}
                   </div>
+                  {/* Baseline row */}
                   <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 3 }}>
                     <span style={{ fontSize: '0.7rem', color: 'var(--text-muted)', width: 52, flexShrink: 0 }}>Baseline</span>
                     <div style={{ flex: 1, height: 7, background: '#f1f5f9', borderRadius: 4 }}>
-                      <div style={{ width: '100%', height: '100%', background: 'repeating-linear-gradient(90deg,#e2e8f0 0,#e2e8f0 6px,transparent 6px,transparent 12px)', borderRadius: 4 }} />
+                      <div style={{ width: `${baseline}%`, height: '100%', background: '#94a3b8', borderRadius: 4 }} />
                     </div>
-                    <span style={{ fontSize: '0.7rem', color: '#94a3b8', width: 28, textAlign: 'right', flexShrink: 0 }}>—</span>
+                    <span style={{ fontSize: '0.7rem', color: '#94a3b8', width: 28, textAlign: 'right', flexShrink: 0 }}>{baseline}%</span>
                   </div>
+                  {/* POIROT row */}
                   <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
                     <span style={{ fontSize: '0.7rem', fontWeight: 700, color, width: 52, flexShrink: 0 }}>POIROT</span>
                     <div style={{ flex: 1, height: 7, background: '#f1f5f9', borderRadius: 4 }}>
-                      <div style={{ width: '100%', height: '100%', background: `repeating-linear-gradient(90deg,${color}33 0,${color}33 6px,transparent 6px,transparent 12px)`, borderRadius: 4 }} />
+                      <div style={{ width: `${poirot}%`, height: '100%', background: color, borderRadius: 4 }} />
                     </div>
-                    <span style={{ fontSize: '0.7rem', fontWeight: 700, color, width: 28, textAlign: 'right', flexShrink: 0 }}>—</span>
+                    <span style={{ fontSize: '0.7rem', fontWeight: 700, color, width: 28, textAlign: 'right', flexShrink: 0 }}>{poirot}%</span>
                   </div>
                 </div>
               ))}
-            </div>
-            <div style={{
-              marginTop: 20, padding: '10px 14px', background: '#fef9c3',
-              borderRadius: 8, fontSize: '0.78rem', color: '#854d0e', border: '1px solid #fde68a'
-            }}>
-              ⏳ Results in progress — data being collected across models
             </div>
           </div>
 

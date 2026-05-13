@@ -3,6 +3,7 @@ import Link from 'next/link';
 import './globals.css';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://poirot-framework.com'),
   title: 'POIROT Protocol Demo',
   description: 'Visualizing Consensus-Based Error Correction in Multi-Agent Systems',
   icons: {

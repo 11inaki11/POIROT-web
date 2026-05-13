@@ -10,7 +10,37 @@ export default function Home() {
         <p className="hero-subtitle" style={{ fontSize: '1.3rem' }}>
           Peer-Oriented Identification &amp; Resolution of Operational Threats
         </p>
-        <p style={{ maxWidth: 700, margin: '16px auto 20px', color: 'var(--text-secondary)', fontSize: '1.1rem', lineHeight: 1.7 }}>
+
+        {/* ─── Authors ─── */}
+        <div style={{ maxWidth: 780, margin: '20px auto 0', textAlign: 'center' }}>
+          <p style={{ fontSize: '1rem', color: 'var(--text-primary)', lineHeight: 2, margin: 0 }}>
+            <a href="mailto:i.dellibarda@csic.es" style={{ color: 'inherit', textDecoration: 'none', fontWeight: 600 }}>
+              Iñaki Dellibarda Varela
+            </a>
+            <sup>1*</sup>
+            {', '}R. Sendra-Arranz<sup>1</sup>
+            {', '}Pablo Romero-Sorozabal<sup>1</sup>
+            {', '}J.M. Valverde-García<sup>1</sup>
+            {', '}Annemarie F. Laudanski<sup>1,2</sup>
+            {', '}Álvaro Gutiérrez<sup>3</sup>
+            {', '}
+            <a href="mailto:e.rocon@csic.es" style={{ color: 'inherit', textDecoration: 'none', fontWeight: 600 }}>
+              Eduardo Rocon
+            </a>
+            <sup>1*†</sup>
+            {', '}Manuel Cebrian<sup>1†</sup>
+          </p>
+          <div style={{ marginTop: 12, fontSize: '0.78rem', color: 'var(--text-muted)', lineHeight: 1.9 }}>
+            <div><sup>1</sup> Center for Automation and Robotics, Spanish National Research Council (CSIC-UPM), Madrid, Spain</div>
+            <div><sup>2</sup> Biomechanics of Human Mobility Laboratory, Dept. of Kinesiology and Health Sciences, University of Waterloo, Canada</div>
+            <div><sup>3</sup> ETSI Telecomunicación, Universidad Politécnica de Madrid (UPM), Madrid, Spain</div>
+            <div style={{ marginTop: 6, color: 'var(--text-muted)', fontSize: '0.75rem' }}>
+              <sup>*</sup> Corresponding authors &nbsp;·&nbsp; <sup>†</sup> Equal supervision contribution
+            </div>
+          </div>
+        </div>
+
+        <p style={{ maxWidth: 700, margin: '28px auto 20px', color: 'var(--text-secondary)', fontSize: '1.1rem', lineHeight: 1.7 }}>
           A consensus-based framework for detecting and attributing errors in multi-agent AI systems
           through collaborative peer interrogation and weighted voting.
         </p>

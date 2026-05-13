@@ -13,7 +13,7 @@ export default function Home() {
 
         {/* ─── Authors ─── */}
         <div style={{ maxWidth: 780, margin: '20px auto 0', textAlign: 'center' }}>
-          <p style={{ fontSize: '1rem', color: 'var(--text-primary)', lineHeight: 2, margin: 0 }}>
+          <p style={{ fontSize: '1rem', color: 'var(--text-primary)', lineHeight: 2, margin: '0 auto', textAlign: 'center' }}>
             <a href="mailto:i.dellibarda@csic.es" style={{ color: 'inherit', textDecoration: 'none', fontWeight: 600 }}>
               Iñaki Dellibarda Varela
             </a>

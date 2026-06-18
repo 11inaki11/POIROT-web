@@ -50,9 +50,11 @@ export default function Home() {
               🎬 See Live Demos
             </button>
           </a>
-          <button className="btn btn-secondary" style={{ fontSize: '1rem', padding: '14px 32px' }}>
-            📄 Preprint (arXiv)
-          </button>
+          <a href="https://arxiv.org/abs/2606.02282" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+            <button className="btn btn-secondary" style={{ fontSize: '1rem', padding: '14px 32px' }}>
+              📄 Preprint (arXiv)
+            </button>
+          </a>
           <a href="https://github.com/11inaki11/POIROT" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
             <button className="btn btn-secondary" style={{ fontSize: '1rem', padding: '14px 32px' }}>
               📦 POIROT Library
